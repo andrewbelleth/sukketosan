@@ -1,0 +1,88 @@
+@use "../global" as *;
+
+html {
+    font-size: 62.5%;
+    margin-top: 0 !important;
+
+    @include mq(lgpc) {
+        font-size: calc(10 / (1600 / 100) * 1vw);
+    }
+
+    @include mq(mdpc) {
+        font-size: calc(10 / (1440 / 100) * 1vw);
+    }
+    @include mq(smpc) {
+      font-size: calc(10 / (1280 / 100) * 1vw);
+  }
+    
+    @include mq(tb) {
+      font-size: calc(10 / (390 / 100) * 1vw);
+    }
+    @include mq(sp) {
+        font-size: calc(10 / (390 / 100) * 1vw);
+    }    
+}
+
+@font-face {
+  font-family: 'Shippori Gothic B2';  /* 好きな名前を付けられます */
+  src: 
+       url('../font/ShipporiGothicB2-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 太字バージョンが必要な場合 */
+@font-face {
+  font-family: 'Shippori Gothic B2';  /* 同じフォントファミリー名を使用 */
+  src: 
+       url('../font/ShipporiGothicB2-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: normal;
+letter-spacing: normal;
+color: $mossgreen;
+background: $white;
+font-family: 'Shippori Gothic B2', sans-serif;
+}
+
+h3,h2{
+  font-weight: 700;
+  color: $mossgreen;
+  font-family: 'Shippori Gothic B2', sans-serif;
+}
+span,p{
+  color: $mossgreen;
+  font-family: 'Shippori Gothic B2', sans-serif;
+}
+
+a {
+    transition: .3s;
+    color: $mossgreen;
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          transition: 0.3s;
+        }
+      }
+}
+.u-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.u-flex-reverse{
+    flex-direction: row-reverse;
+}
+
+  
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+

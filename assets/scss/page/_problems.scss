@@ -1,0 +1,368 @@
+@use "../global" as *;
+
+.problems {
+    position: relative;
+    z-index: 1;
+    padding-block: rem(100) rem(60);
+
+    .problems__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        aspect-ratio: 1440 / 1313;
+        z-index: -1;
+    }
+
+    .problems__wrapper {
+        max-width: rem(1196);
+        width: 90%;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        gap: rem(124);
+
+        @include mq(smpc) {
+            gap: rem(50);
+        }
+    }
+
+    .problems__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .problems__title {
+        display: flex;
+        flex-direction: column;
+        gap: rem(12);
+
+        &.problems__title-01 {
+            padding-left: rem(10);
+        }
+
+        .problems__title-en {
+            position: relative;
+            z-index: 1;
+
+            &-01 {
+                width: rem(107.5);
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background-image: url(../images/pc/problems.png);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: rem(409);
+                    height: rem(72);
+                    z-index: -1;
+                }
+            }
+
+            &-02 {
+                width: rem(106);
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background-image: url(../images/pc/solutions.png);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: rem(399);
+                    height: rem(73);
+                    z-index: -1;
+                }
+            }
+
+        }
+
+        .problems__title-jp {
+            font-size: rem(36);
+            line-height: calc(40 / 36);
+            font-weight: 500;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .problems__title-jp-02 {
+            padding-left: rem(34);
+        }
+
+
+        .problems__title-02-01 {
+            width: rem(314 / 2);
+            margin-inline: rem(6);
+        }
+
+        .problems__title-02-02 {
+            width: rem(783 / 2);
+            margin-left: rem(-10);
+        }
+
+    }
+
+    .problems__col {
+        display: flex;
+        gap: rem(46);
+        margin-top: rem(42);
+    }
+
+    .problems__item {
+        display: flex;
+        align-items: center;
+        background-image: url(../images/pc/pop.webp);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: rem(742/2);
+        height: rem(310/2);
+        padding-bottom: rem(18);
+
+        &:nth-child(1) {
+            .problems__item-icon {
+                margin-left: rem(3);
+                margin-right: rem(4);
+            }
+        }
+
+        &:nth-child(2) {
+            .problems__item-icon {
+                margin-left: rem(7);
+                margin-right: rem(-4);
+            }
+        }
+
+        &:nth-child(3) {
+            .problems__item-icon {
+                margin-left: rem(14);
+                margin-right: rem(6);
+            }
+        }
+    }
+
+    .problems__item-icon {
+        width: rem(57);
+        height: rem(57);
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .problems__item-text {
+        font-size: rem(22);
+        line-height: 1.1;
+        font-weight: 500;
+        color: $mossgreen;
+    }
+
+    .problems__solution-col {
+        max-width: rem(1164);
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: rem(30) rem(40);
+        padding-top: rem(30);
+        margin-top: rem(30);
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: rem(1000);
+            height: rem(490);
+            border: 5px solid #B3ECEE;
+            z-index: -1;
+        }
+    }
+
+    .problems__solution-item {
+        position: relative;
+        width: calc(100% / 3 - rem(40 * 2 / 3));
+    }
+
+    .problems__solution-item-img {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 361 / 233
+    }
+
+    .problems__solution-item-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: rem(362);
+        height: rem(99);
+        background-image: url(../images/pc/problems-shape.svg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: rem(17);
+        text-align: center;
+        font-size: rem(22);
+        line-height: 1.1;
+        font-weight: 500;
+        color: $white
+    }
+
+    @include mq(SP) {
+        z-index: 1;
+        padding-block: rem(50) rem(30);
+        padding-inline: rem(14);
+
+        .problems__wrapper {
+            width: 100%;
+            gap: rem(30);
+        }
+
+        .problems__title {
+            gap: rem(10);
+
+            &.problems__title-01 {
+                padding-left: rem(0);
+            }
+
+            &.problems__title-02 {
+                .problems__title-03 {
+                    margin-left: rem(96);
+                }
+            }
+
+            .problems__title-en {
+                &-01 {
+                    width: rem(155/2);
+
+                    &::before {
+                        width: rem(205);
+                        height: rem(58);
+                    }
+                }
+
+                &-02 {
+                    width: rem(147/2);
+
+                    &::before {
+                        width: rem(197);
+                        height: rem(58);
+                    }
+                }
+
+            }
+
+            .problems__title-jp {
+                font-size: rem(24);
+                line-height: calc(26 / 24);
+            }
+
+            .problems__title-jp-02 {
+                padding-left: rem(0);
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+
+            .problems__title-02-01 {
+                width: rem(110);
+                margin-inline: rem(5) 0;
+            }
+
+            .problems__title-02-02 {
+                width: rem(248);
+                margin-left: rem(0);
+                margin-block: rem(6) rem(5);
+            }
+
+        }
+
+        .problems__col {
+            display: flex;
+            flex-direction: column;
+            gap: rem(10);
+            margin-top: rem(20);
+            max-width: rem(300);
+            margin-inline: auto;
+        }
+
+        .problems__item {
+            background-image: url(../images/sp/pop.webp);
+            width: rem(300);
+            height: rem(126);
+
+            &:nth-child(1) {
+                .problems__item-icon {
+                    margin-left: rem(1);
+                    margin-right: rem(13);
+                }
+            }
+
+            &:nth-child(2) {
+                .problems__item-icon {
+                    margin-left: rem(5);
+                    margin-right: rem(9);
+                }
+            }
+
+            &:nth-child(3) {
+                margin: 0;
+
+                .problems__item-icon {
+                    margin-left: rem(7);
+                    margin-right: rem(9);
+                }
+            }
+        }
+
+        .problems__item-icon {
+            width: rem(40);
+            height: rem(40);
+        }
+
+        .problems__item-text {
+            font-size: rem(18);
+        }
+
+        .problems__solution-col {
+            max-width: rem(360);
+            gap: rem(10);
+            padding-top: rem(0);
+            margin-top: rem(30);
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .problems__solution-item {
+            position: relative;
+            width: 100%;
+        }
+
+        .problems__solution-item-img {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 360 / 180
+        }
+
+        .problems__solution-item-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: rem(360);
+            height: rem(64);
+            background-image: url(../images/sp/problems-shape.svg);
+            padding-top: rem(10);
+            font-size: rem(18);
+        }
+    }
+}

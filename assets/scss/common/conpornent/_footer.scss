@@ -1,0 +1,52 @@
+@use "../../global" as *;
+
+.footer {
+  background-color: $white;
+  color: $mossgreen;
+  text-align: center;
+  font-size: rem(16);
+  padding-block: rem(17);
+  font-weight: 700;
+  @include mq(SP) {
+    font-size: rem(12);
+    padding-block: rem(9);
+  }
+}
+//ページトップ
+
+.pageTop__btn {
+  position: fixed;
+  z-index: 100;
+  bottom: 25px;
+  right: 25px;
+  transition: 0.3s;
+
+  .pageTop__link {
+    width: rem(56);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: $mossgreen;
+    img {
+      width: rem(16);
+      aspect-ratio: 16/20;
+    }
+  }
+  &:hover {
+    transform: translateY(-5px); // ホバー時に上に5px浮かせる
+    scale: 1.05; 
+    transition: 0.3s;
+  }
+  @include mq(SP) {
+    bottom: 16px;
+    right: 16px;
+    .pageTop__link {
+      width: rem(48);
+      img {
+        width: rem(13);
+        aspect-ratio: 13/17;
+      }
+    }
+  }
+}

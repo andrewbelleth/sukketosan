@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --main: #3C3C3C;
+    --navy: #003876;
+    --navy02: #222D5E;
+    --light-blue: #00B1C7;
+    --light-blue02: #2A89BF;
+    --yellow: #FEFF05;
+    --gray: #707070;
+    --light-gray: #F2F2F2;
+    --light-gray02: #F0F0F0;
+
+    --oswald: "Oswald", sans-serif;
+    --notosans: "Noto Sans JP", sans-serif;
+}
+
+$white: var(--white);
+$black: var(--black);
+$main: var(--main);
+$navy: var(--navy);
+$navy02: var(--navy02);
+$light-blue: var(--light-blue);
+$light-blue02: var(--light-blue02);
+$yellow: var(--yellow);
+$gray: var(--gray);
+$light-gray: var(--light-gray);
+$light-gray02: var(--light-gray02);
+
+$oswald: var(--oswald);
+$notosans: var(--notosans);

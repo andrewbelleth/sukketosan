@@ -1,0 +1,52 @@
+@use "../../global" as *;
+@use "./_conpornent" as *;
+
+.c-title {
+  padding-bottom: rem(15);
+  font-size: rem(36);
+  font-weight: 700;
+  line-height: 1;
+  border-bottom: 2px solid $mossgreen;
+
+  &__white {
+    color: $white;
+    border-color: $white;
+  }
+
+  @include mq(SP) {
+    font-size: rem(24);
+    padding-bottom: rem(10);
+  }
+}
+
+//セクションタイトル背景(右寄せ)
+.title-bg-right {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    z-index: -1;
+    content: "";
+    display: block;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+//セクションタイトル背景(左寄せ)
+.title-bg-left {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    z-index: -1;
+    content: "";
+    display: block;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

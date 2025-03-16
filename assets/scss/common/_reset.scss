@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.link {
+    text-decoration: none;
+}
+
+a,
+img,
+span {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+em{
+    font-style: normal;
+}

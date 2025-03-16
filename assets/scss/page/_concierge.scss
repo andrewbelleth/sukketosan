@@ -1,0 +1,93 @@
+@use "../global" as *;
+
+.concierge {
+  background: url(../images/pc/concierge-bg.webp) no-repeat center center /
+    cover;
+  width: 100%;
+  aspect-ratio: 1440/630;
+  position: relative;
+  z-index: 1;
+  &__container {
+    padding-top: rem(126);
+    width: min(rem(717), 72%);
+    margin-left: 16%;
+
+    @include mq(xlpc) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(calc(rem(-263/2) + -50%), -50%);
+      padding: 0;
+      margin: 0;
+    }
+  }
+  &__title {
+    font-size: rem(42);
+    color: $white;
+    border-bottom: 2px solid $white;
+    padding-bottom: rem(18);
+    span {
+      display: inline-block;
+      padding-left: rem(8);
+      font-size: rem(32);
+      color: $white;
+    }
+  }
+  &__text {
+    margin-top: rem(45);
+    width: 95%;
+    background: $white;
+    padding: rem(27) rem(13);
+    font-size: rem(36);
+    line-height: calc(39.6 / 36);
+    span {
+      color: $blue;
+    }
+  }
+  &__disc {
+    width: 95%;
+    margin-top: rem(30);
+    font-size: rem(24);
+    line-height: calc(36 / 24);
+    color: $white;
+    text-align: justify;
+  }
+
+  @media (769px <= width <= 1280px) {
+    &__container {
+      margin-left: 10%;
+    }
+  }
+  @include mq(SP) {
+    background: url(../images/sp/concierge-bg.webp) no-repeat center center /
+      cover;
+    aspect-ratio: 390/474;
+    &__container {
+      padding-top: rem(50);
+      width: 100%;
+      padding-inline: rem(24.5);
+      margin-left: 0;
+    }
+    &__title {
+      font-size: rem(20);
+      padding-bottom: rem(10);
+      span {
+        padding-left: rem(0);
+        font-size: rem(18);
+      }
+    }
+    &__text {
+      margin-top: rem(10);
+      width: 100%;
+      padding: rem(10) rem(26);
+      font-size: rem(24);
+      line-height: calc(26 / 24);
+    }
+    &__disc {
+      width: 100%;
+      margin-top: rem(10);
+      font-size: rem(16);
+      line-height: calc(24 / 16);
+    }
+  }
+}

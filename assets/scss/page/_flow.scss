@@ -1,0 +1,147 @@
+@use "../global" as *;
+
+.flow{
+    background: $blue;
+    padding-block: rem(60) rem(70);
+    &::before{
+        width: rem(209);
+        aspect-ratio: 209 / 730;
+        background: url(../images/pc/flow.png) no-repeat center center / contain;
+        
+    }
+    &__title{
+        color: $white;
+    border-bottom: 2px solid $white;
+    }
+    &__container{
+        margin-top: rem(80);
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: rem(90);
+    }
+    &__item{
+        background: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(10);
+        position: relative;
+        border-radius: rem(100) 0 0 rem(100);
+        padding-block: rem(20);
+        &::before{
+            content: "";
+            display: block;
+            width: rem(150);
+            height: rem(150);
+            background: url(../images/pc/flow-icon1.png) no-repeat center center / contain;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: rem(50);
+            height: rem(50);
+            background: url(../images/common/triangle.png) no-repeat center center / contain;
+            position: absolute;
+            bottom: rem(-66);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &:nth-of-type(2){
+            &::before{
+                background: url(../images/pc/flow-icon2.png) no-repeat center center / contain;
+            }
+        }
+        &:nth-of-type(3){
+            &::before{
+                background: url(../images/pc/flow-icon3.png) no-repeat center center / contain;
+            }
+        }
+        &:last-of-type{
+            &::before{
+                background: url(../images/pc/flow-icon4.png) no-repeat center center / contain;
+            }
+            &::after{
+                content: none;
+            }
+        }
+    }
+    &__item_title{
+        font-size: rem(36);
+        color: $blue;
+line-height: 1;
+    }
+    &__item_text{
+        color: $mossgreen;
+        font-size: rem(20);
+        text-align: center;
+    }
+    @include mq(SP){
+      padding-inline: rem(15);
+        padding-block: rem(30);
+        &::before{
+            margin-top: rem(70);
+            width: rem(47);
+            aspect-ratio: 47 / 157;
+            background: url(../images/sp/flow.png) no-repeat center center / contain;
+            
+        }
+        &__container{
+            margin-top: rem(28);
+        }
+        &__list{
+            gap: rem(50);
+        }
+        &__item{
+            background: unset;
+            padding-block: rem(0);
+            &::before{
+                top: rem(-10);
+                transform: translateY(0);
+                left: rem(-5);
+                width: rem(45);
+                height: rem(45);
+                background: url(../images/sp/flow-icon1.png) no-repeat center center / contain;
+            }
+            &::after{
+                width: rem(20);
+                height: rem(20);
+                bottom: rem(-30);
+            }
+            &:nth-of-type(2){
+                &::before{
+                    background: url(../images/sp/flow-icon2.png) no-repeat center center / contain;
+                }
+            }
+            &:nth-of-type(3){
+                &::before{
+                    background: url(../images/sp/flow-icon3.png) no-repeat center center / contain;
+                }
+            }
+            &:last-of-type{
+                &::before{
+                    background: url(../images/sp/flow-icon4.png) no-repeat center center / contain;
+                }
+            }
+        }
+        &__item_title{
+            font-size: rem(20);
+           background: $white;
+           padding-block: rem(5);
+           width: 100%;
+           text-align: center;
+           border-radius: rem(100) 0 0 rem(100);
+        }
+        &__item_text{
+            color: $mossgreen;
+            font-size: rem(16);
+            text-align: left;
+            padding-left: rem(45);
+        }
+    }
+}

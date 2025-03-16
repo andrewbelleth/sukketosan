@@ -1,0 +1,64 @@
+@use "../../global" as *;
+
+.wrapper {
+  max-width: min(1000px, 75%);
+  margin-inline: auto;
+  width: 100%;
+
+  @include mq(SP) {
+    max-width: 100%;
+    /* width: calc(100% - rem(15 * 2)); */
+  }
+}
+
+.mb-120 {
+  margin-bottom: rem(-120);
+
+  @include mq(SP) {
+    margin-bottom: rem(-60);
+  }
+}
+
+.ml0 {
+  margin-left: 0 !important;
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
+.gap-40 {
+  gap: rem(40) !important;
+
+  @include mq(SP) {
+    gap: rem(20) !important;
+  }
+}
+
+.tal {
+  text-align: left !important;
+}
+
+.tac {
+  text-align: center !important;
+}
+
+.tar {
+  text-align: right !important;
+}
+
+.lh2 {
+  line-height: 2 !important;
+}
+
+.mobile {
+  display: none;
+
+  @include mq(SP) {
+    display: block;
+  }
+}
+
+.color-blue {
+  color: $blue;
+}

@@ -1,0 +1,125 @@
+@use "./_valiables" as *;
+
+// breackpoint
+$breakpoints: (
+   sp: "screen and (max-width: 600px)",
+  tb: "screen and (min-width: 601px) and (max-width: 768px)",
+  pc: "screen and (min-width: 769px)",
+  SP: "screen and (max-width: 768px)",
+  smpc: "screen and (min-width: 769px) and (max-width: 1024px)",
+  mdpc: "screen and (min-width: 1025px) and (max-width: 1600px)",
+  lgpc: "screen and (min-width: 1601px) and (max-width: 1920px)",
+  xlpc: "screen and (min-width: 1921px)"
+);
+
+@mixin mq($bp) {
+  $query: map-get($breakpoints, $bp);
+  @if $query {
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint `#{$bp}` not found in $breakpoints";
+  }
+}
+
+$baseFontSize: 10;
+
+@function rem($pixels) {
+  @return $pixels / $baseFontSize * 1rem;
+}
+
+@function em($pixels, $fontSize: $baseFontSize) {
+  @return $pixels / $fontSize * 1em;
+}
+@function px-to-vw($px, $base-vw: 1680) {
+  @return ($px / $base-vw) * 100 * 1vw;
+}
+@function lts-em($letter-spacing-px, $font-size-px) {
+  @return #{$letter-spacing-px / $font-size-px}em;
+}
+
+.sp-only {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+.tab-only {
+  display: none;
+  @media (min-width: 769px) and (max-width: 1024px) {
+    display: block;
+  }
+}
+.pc-only {
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.spbtm-only {
+  display: none;
+  @media (max-width: 350px) {
+    display: block;
+  }
+}
+/*丸ハイライト */
+
+@mixin circle-highlight($width) {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(36);
+  width: $width;
+}
+
+//青色のタイトル部分
+@mixin c-title--blue($size){
+    color: $m-blue;
+    font-size: $size;
+    font-weight: 700;
+}
+@mixin fs-28{
+  font-size: rem(28);
+  line-height: calc(42 / 28);
+  @include mq(SP) {
+    font-size: rem(20);
+    line-height: calc(30 / 20);
+  }
+}
+
+@mixin fz-24{
+  font-size: rem(24);
+  line-height: calc(36 / 24);
+  @include mq(SP) {
+    font-size: rem(18);
+    line-height: calc(27 / 18);
+  }
+}
+@mixin fz-20{
+  font-size: rem(20);
+  line-height: calc(28 / 20);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  @include mq(SP) {
+    font-size: rem(18);
+    line-height: calc(27 / 18);
+  }
+}
+
+@mixin fz-18{
+  font-size: rem(18);
+  line-height: calc(25 / 18);
+}
+@mixin fz-16{
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+}
+@mixin fz-14{
+  font-size: rem(14);
+  line-height: calc(21 / 14);
+}
+
+

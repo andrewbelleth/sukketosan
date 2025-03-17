@@ -1,11 +1,11 @@
 <div class="price">
-    <div class="wrapper">
+    <div class="price__wrapper wrapper">
         <h2 class="price__title c-title">
             <span class="price__title-jp c-title-jp">料金</span>
             <span class="price__title-en c-title-en">PRICE</span>
         </h2>
         <div class="price__person">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/price-person.webp" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/price-person.png" alt="">
         </div>
         <div class="price__container">
             <div class="price__box">

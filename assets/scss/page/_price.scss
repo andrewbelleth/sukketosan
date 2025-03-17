@@ -3,12 +3,70 @@
 .price {
     position: relative;
     z-index: 1;
-    padding-block: rem(124) rem(119);
     overflow: hidden;
+    
+    .price__wrapper {
+        padding-block: rem(107.5) rem(119);
+        position: relative;
+    }
 
     .price__container {
         margin-top: rem(83);
     }
+
+    .price__person {
+        position: absolute;
+        top: rem(200);
+        right: rem(-120);
+        width: rem(561);        
+    }
+
+    .price__box {
+        border-radius: rem(20);
+        background-color: $light-gray02;
+        padding-block: rem(30) rem(64);
+        padding-inline: rem(40);
+        height: rem(354);
+    }
+
+    .price__box-inner {
+        max-width: rem(630);
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+    }
+
+    .price__box-item {
+        &.price__box-item--1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: rem(28);
+
+            .price__box-item-element {
+                &.price__box-item-element--1 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: rem(8);
+                }
+
+                &.price__box-item-element--2 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        &.price__box-item--2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    
+    
 
     .price__text {
         font-size: rem(20);

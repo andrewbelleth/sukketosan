@@ -1,7 +1,7 @@
 @use "../../global" as *;
 
 .wrapper {
-  max-width: min(1000px, 75%);
+  max-width: min(rem(1200), 83.3333333333333%);
   margin-inline: auto;
   width: 100%;
 

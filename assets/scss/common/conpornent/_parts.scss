@@ -2,15 +2,52 @@
 @use "./_conpornent" as *;
 
 .c-title {
-  padding-bottom: rem(15);
-  font-size: rem(36);
-  font-weight: 700;
-  line-height: 1;
-  border-bottom: 2px solid $mossgreen;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
 
-  &__white {
-    color: $white;
-    border-color: $white;
+  .c-title-jp {
+    font-family: $notosans;
+    font-size: rem(42);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: $main;
+
+    &.c-title-jp--fw400 {
+      font-weight: 400;
+    }
+  }
+
+  .c-title-en {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $oswald;
+    font-size: rem(120);
+    font-weight: 700;
+    line-height: calc(178 / 120);
+    letter-spacing: 0.04em;
+    color: $light-gray03;
+    z-index: -1;
+  }
+
+  &.c-title--white {
+    .c-title-jp {
+      color: $white;
+    }
+    .c-title-en {
+      color: $bluegreen;
+    }
+  }
+  &.c-title--bg-white {
+    .c-title-en {
+      color: $white;
+    }
   }
 
   @include mq(SP) {

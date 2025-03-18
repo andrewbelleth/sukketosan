@@ -1,0 +1,58 @@
+@use "../global" as *;
+
+.company {
+  background-image: url(../images/pc/company-bg.webp);
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding-block: rem(150) rem(98.5);
+  .company__title {
+    .company__title-jp {
+      color: $white;
+      font-size: rem(40);
+      line-height: calc(60 / 40);
+    }
+    .company__title-en {
+      color: #06458b;
+    }
+  }
+  .company__container {
+    margin-top: rem(48.5);
+    width: rem(616);
+    margin-inline: auto;
+    padding-inline: rem(37);
+  }
+  .logo-images {
+    width: rem(220);
+    aspect-ratio: 220/59;
+    margin-inline: auto;
+  }
+
+  .company__list {
+    margin-top: rem(50);
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+  }
+  .company__item {
+    display: flex;
+    gap: rem(40);
+    align-items: flex-start;
+    color: $white;
+    letter-spacing: 0.04em;
+    font-size: rem(16);
+    line-height: calc(24 / 16);
+    font-weight: 500;
+    text-align-last: left;
+    p {
+      color: $white;
+    }
+  }
+  .company__term {
+    min-width: min-content;
+    min-width: rem(83);
+  }
+  .company__desc {
+    flex: 1;
+  }
+}

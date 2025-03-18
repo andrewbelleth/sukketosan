@@ -50,6 +50,7 @@ a {
     @media (hover: hover) and (pointer: fine) {
         &:hover {
           transition: 0.3s;
+          color: $light-blue02;
         }
       }
 }

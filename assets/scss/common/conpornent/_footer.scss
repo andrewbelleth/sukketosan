@@ -1,8 +1,110 @@
 @use "../../global" as *;
 
+footer {
+  position: relative;
+  padding-block: rem(57) rem(45.5);
+  background: $navy02;
+
+  .footer__inner {
+    width: rem(960);
+    margin-inline: auto;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer__left {
+    width: rem(120);
+    height: rem(134);
+  }
+  .footer__right {
+    display: flex;
+    flex-direction: column;
+    gap: rem(80);
+    width: rem(370);
+    align-items: flex-end;
+  }
+  .footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: rem(8);
+  }
+
+  .footer__menu-item {
+    font-weight: 500;
+    font-size: rem(10);
+    line-height: calc(15 / 10);
+    letter-spacing: 0.07em;
+    color: $white;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        transition: 0.3s;
+        color: $light-blue02;
+      }
+    }
+   
+  }
+  .footer__logo-second {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    position: relative;
+    p {
+      font-weight: 500;
+      font-size: rem(11);
+      line-height: calc(17 / 11);
+      letter-spacing: 0.11em;
+      color: $white;
+    }
+    &::after {
+      font-family: $notosans;
+      content: "オーミト";
+      position: absolute;
+      bottom: rem(-17);
+      right: rem(30);
+      font-size: rem(11);
+      letter-spacing: 0.1em;
+      line-height: calc(17 / 11);
+      color: $white;
+      font-weight: 500;
+    }
+  }
+  .footer__logo-second-image {
+    width: rem(115);
+    aspect-ratio: 115/31;
+  }
+  .footer__copyright {
+    border-top: 1px solid $white;
+    margin-top: rem(64.5);
+    padding-top: rem(17.5);
+    .footer__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    p{
+      color: $white;
+      font-weight: 500;
+    }
+  }
+  .footer__copyright-text{
+    font-size: rem(12);
+    line-height: calc(18 / 12);
+    letter-spacing: 0.09em;
+  }
+  .footer__ban-text{
+    font-weight: normal;
+    font-size: rem(11);
+    letter-spacing: 0.07em;
+    line-height: calc(17 / 11);
+
+  }
+}
 
 //ページトップ
-
 .pageTop__btn {
   position: fixed;
   z-index: 100;
@@ -11,8 +113,8 @@
   transition: 0.3s;
   background-color: $orange;
   width: rem(54);
-    height: rem(54);
-    border-radius: 50%;
+  height: rem(54);
+  border-radius: 50%;
   .pageTop__link {
     width: 100%;
     height: 100%;
@@ -24,7 +126,7 @@
     }
   }
   &:hover {
-    transform: translateY(-3px); 
+    transform: translateY(-3px);
     background-color: $liteorange;
     transition: 0.3s;
   }

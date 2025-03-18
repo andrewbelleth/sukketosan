@@ -23,10 +23,10 @@
                                 <span class="price__box-item-element-text-num">10</span>
                                 <span class="price__box-item-element-text-wrap">
                                     <span class="price__box-item-element-text01">/月額</span>
-                                    <div class="price__box-item-element-text-wrap02">
+                                    <span class="price__box-item-element-text-wrap02">
                                         <span class="price__box-item-element-text02">万円</span>
                                         <span class="price__box-item-element-text03">(税別)</span>
-                                    </div>
+                                    </span>
                                 </span>
                             </p>
                         </div>

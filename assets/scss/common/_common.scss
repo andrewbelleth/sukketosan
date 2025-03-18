@@ -1,68 +1,84 @@
 @use "../global" as *;
 
 html {
-    font-size: 62.5%;
-    margin-top: 0 !important;
+  font-size: 62.5%;
+  margin-top: 0 !important;
 
-    @include mq(lgpc) {
-        font-size: calc(10 / (1600 / 100) * 1vw);
-    }
-
-    @include mq(mdpc) {
-        font-size: calc(10 / (1440 / 100) * 1vw);
-    }
-    @include mq(smpc) {
-      font-size: calc(10 / (1280 / 100) * 1vw);
+  @include mq(lgpc) {
+    font-size: calc(10 / (1600 / 100) * 1vw);
   }
-    
-    @include mq(tb) {
-      font-size: calc(10 / (390 / 100) * 1vw);
-    }
-    @include mq(sp) {
-        font-size: calc(10 / (390 / 100) * 1vw);
-    }    
+
+  @include mq(mdpc) {
+    font-size: calc(10 / (1440 / 100) * 1vw);
+  }
+
+  @include mq(smpc) {
+    font-size: calc(10 / (1280 / 100) * 1vw);
+  }
+
+  @include mq(tb) {
+    font-size: calc(10 / (390 / 100) * 1vw);
+  }
+
+  @include mq(sp) {
+    font-size: calc(10 / (390 / 100) * 1vw);
+  }
 }
 
 
 body {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: normal;
-letter-spacing: normal;
-color: $main;
-background: $white;
-font-family: $notosans;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $main;
+  background: $white;
+  font-family: $notosans;
 }
 
-h3,h2{
+h3,
+h2 {
   font-weight: 700;
   color: $main;
   font-family: $notosans;
 }
-span,p{
+
+span,
+p {
   color: $main;
   font-family: $notosans;
 }
 
 a {
-    transition: .3s;
-    color: $main;
-    @media (hover: hover) and (pointer: fine) {
-        &:hover {
-          transition: 0.3s;
-          color: $light-blue02;
-        }
-      }
-}
-.u-flex{
-    display: flex;
-    justify-content: space-between;
-}
-.u-flex-reverse{
-    flex-direction: row-reverse;
+  transition: .3s;
+  color: $main;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transition: 0.3s;
+    }
+  }
 }
 
-  
+.u-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.u-flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.u-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.u-flex-reverse {
+  flex-direction: row-reverse;
+}
+
+
 .svg {
   position: absolute;
   top: 0;
@@ -70,4 +86,3 @@ a {
   width: 0;
   height: 0;
 }
-

@@ -1,11 +1,11 @@
 <div class="price">
-    <div class="wrapper">
+    <div class="price__wrapper wrapper">
         <h2 class="price__title c-title">
             <span class="price__title-jp c-title-jp">料金</span>
             <span class="price__title-en c-title-en">PRICE</span>
         </h2>
         <div class="price__person">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/price-person.webp" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/price-person.png" alt="">
         </div>
         <div class="price__container">
             <div class="price__box">
@@ -23,10 +23,10 @@
                                 <span class="price__box-item-element-text-num">10</span>
                                 <span class="price__box-item-element-text-wrap">
                                     <span class="price__box-item-element-text01">/月額</span>
-                                    <div class="price__box-item-element-text-wrap02">
+                                    <span class="price__box-item-element-text-wrap02">
                                         <span class="price__box-item-element-text02">万円</span>
                                         <span class="price__box-item-element-text03">(税別)</span>
-                                    </div>
+                                    </span>
                                 </span>
                             </p>
                         </div>

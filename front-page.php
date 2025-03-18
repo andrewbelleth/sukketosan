@@ -9,6 +9,8 @@ Template Name: トップページ
 
 <main>    
     <?php get_template_part('template-parts/price'); ?>
+    <?php get_template_part('template-parts/faq'); ?>
+    <?php get_template_part('template-parts/company'); ?>
 </main>
 
 <?php get_template_part('template-parts/footer'); ?>

@@ -106,10 +106,10 @@ footer {
 
 //ページトップ
 .pageTop__btn {
-  position: fixed;
+  position: absolute;
   z-index: 100;
-  bottom: 25px;
-  right: 25px;
+  top: rem(15.5);
+  right: rem(17);
   transition: 0.3s;
   background-color: $orange;
   width: rem(54);

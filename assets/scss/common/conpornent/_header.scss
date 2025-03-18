@@ -1,3 +1,304 @@
 @use "../../global" as *;
 
+@use "../../global/" as *;
 
+.header {
+  transition: 0.2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+
+  .header__inner {
+    padding: rem(20);
+    align-items: flex-start;
+  }
+  .header__logo {
+    width: rem(91);
+    height: 100%;
+    img {
+      aspect-ratio: 91/103;
+    }
+  }
+
+  .header__navbar {
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    width: rem(260);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: 400;
+    overflow: hidden;
+    padding: rem(20) rem(18.5) rem(20) rem(24);
+    gap: rem(50);
+    background: $white;
+    transform: translateX(100%);
+  }
+  .header__nav-inner {
+    width: 100%;
+    gap: rem(56);
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .header__nav-inner {
+    display: flex;
+    gap: rem(40);
+    margin-top: rem(88);
+  }
+  .header__menu {
+    flex-direction: column;
+  }
+  .header__list {
+    width: 100%;
+    padding-top: rem(0);
+    &:not(:first-of-type) {
+      padding-top: rem(22);
+    }
+  }
+  .header__link {
+    font-size: rem(15);
+    line-height: calc(22 / 15);
+    font-weight: 500;
+    color: $white;
+    transition: 0.3s;
+    letter-spacing: 0.07em;
+    color: #1f2b61;
+    &:hover {
+      color: $light-blue02;
+      transition: 0.5s;
+    }
+  }
+  .hamburger-inner {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: rem(260);
+    gap: rem(36);
+    position: relative;
+    z-index: 500;
+    .logo-images {
+      width: rem(101);
+      img {
+        aspect-ratio: 101/32;
+      }
+    }
+  }
+
+  /*  @include mq(SP) {
+      .header__inner {
+        padding-block: rem(20);
+        padding-inline: 0;
+        justify-content: flex-start;
+      }
+      .header__logo {
+        padding: rem(20) rem(20) rem(0) rem(20);
+      }
+      .header__menu-left-inner {
+        width: 100%;
+      }
+      .header__menu-left-title {
+        font-size: rem(30);
+        margin-bottom: max(rem(18), 18px);
+        text-align: center;
+      }
+      .header__link-text {
+        font-size: max(rem(20), 15px);
+        line-height: calc(30 / 20);
+      }
+      .header__link {
+        padding-block: max(rem(17), 15px);
+      }
+      
+     
+    } 
+  }*/
+  /* @include mq(SP) {
+      .header__inner {
+        padding: rem(20) rem(20) rem(20) 0;
+      }
+  
+      .header__logo {
+        background: $white;
+        border-radius: 0 rem(100) rem(100) 0;
+        padding: rem(10) rem(40) rem(10) rem(22);
+        picture {
+          width: max(rem(132),132px);
+        }
+      }
+      .header__navbar {
+        padding: rem(70) rem(25) rem(0);
+      }
+      .header__nav-inner {
+        flex-direction: column;
+        max-width: 100%;
+      }
+  
+      .header__menu-left {
+        gap: rem(0);
+      }
+      .header__list {
+        padding: rem(0);
+        &:last-of-type {
+          &:last-of-type {
+            margin-top: rem(20);
+            border-bottom: 1px solid $white;
+            margin-top: 0;
+          }
+        }
+      }
+      .header__link {
+        font-size: rem(16);
+        line-height: calc(23 / 16);
+        width: 100%;
+      }
+    } */
+}
+
+.hamburger {
+  cursor: pointer;
+  width: rem(50);
+  height: rem(50);
+  transition: 0.5s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12);
+
+  .hamburger__line {
+    display: grid;
+    width: rem(20);
+    height: rem(10);
+    place-items: center;
+    position: relative;
+    transition: 0.5s;
+    span {
+      width: rem(20);
+      border-radius: 1px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      transition: 0.5s ease-in-out;
+      background-color: $navy02;
+      left: 0;
+      &:nth-child(1) {
+        top: rem(0);
+      }
+      &:nth-child(2) {
+        top: rem(6);
+        opacity: 1;
+        animation-delay: 1s;
+      }
+      &:nth-child(3) {
+        top: rem(12);
+      }
+    }
+  }
+  /*  @include mq(SP) {
+    width: 60px;
+    height: 60px;
+    gap: 8px;
+    .hamburger__line {
+      width: 20px;
+      height: 15px;
+      span {
+        width: 20px;
+        height: 2px;
+        &:nth-child(2) {
+          top: 7.5px;
+        }
+        &:nth-child(3) {
+          top: 15px;
+        }
+      }
+    }
+    .hamburger__text {
+      font-size: 10px;
+    }
+  } */
+}
+
+//ハンバーガー開閉時挙動
+.header.open {
+  .header__navbar {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+    transform: translateY(0);
+  }
+
+  .hamburger {
+    transition: 0.5s ease-in-out;
+  }
+
+  .hamburger__line {
+    span {
+      transition: 0.5s ease-in-out;
+      background-color: $navy02;
+      &:nth-child(1) {
+        transform: translateY(rem(6)) rotate(-45deg);
+      }
+      &:nth-child(2) {
+        visibility: hidden;
+        transition: 0s;
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: translateY(rem(-6)) rotate(45deg);
+      }
+    }
+  }
+  /*  @include mq(SP) {
+    .hamburger__line {
+      span {
+        &:nth-child(1) {
+          transform: translateY(7.5px) rotate(-326deg);
+        }
+        &:nth-child(3) {
+          transform: translateY(-7.5px) rotate(326deg);
+        }
+      }
+    }
+  } */
+}
+
+.floating {
+  position: fixed;
+  z-index: 500;
+  bottom: 0;
+  right: 0;
+  width: rem(260);
+  padding: rem(9) rem(10);
+  border-radius: rem(20) 0px 0px 0px;
+  background: linear-gradient(#00b1c7e6 0%, #2a89bfe6 100%);
+ /*  transition: background-color 0.5s; */
+  &:hover {
+    background: rgba(34, 45, 94, 0.9);
+    /* transition: background-color 0.5s; */
+  }
+  .floating__inner {
+    display: flex;
+    align-items: center;
+    gap: rem(12);
+  }
+  img {
+    display: block;
+    width: rem(35);
+    height: rem(35);
+  }
+  p {
+    font-weight: 500;
+    font-size: rem(15);
+    line-height: calc(23 / 15);
+    letter-spacing: 0.03em;
+    color: $white;
+  }
+}

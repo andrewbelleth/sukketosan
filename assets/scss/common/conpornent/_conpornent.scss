@@ -1,13 +1,12 @@
 @use "../../global" as *;
 
 .wrapper {
-  max-width: min(1000px, 75%);
+  width: rem(1200);
   margin-inline: auto;
   width: 100%;
 
   @include mq(SP) {
-    max-width: 100%;
-    /* width: calc(100% - rem(15 * 2)); */
+    width: 100%;
   }
 }
 

@@ -1,2 +1,38 @@
 @use "../../global" as *;
 
+.cta {
+  background: url(../images/pc/cta-bg.webp) no-repeat center center / cover;
+  padding: rem(80) 0;
+  .cta__title {
+    font-weight: 700;
+    font-size: rem(32);
+    line-height: calc(60 / 32);
+    letter-spacing: 0.01em;
+    color: $white;
+    text-align: center;
+  }
+  .cta__link {
+    background: rgba(254, 255, 5, 0.9);
+    margin-top: rem(32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(16);
+    width: rem(400);
+    margin-inline: auto;
+    padding-block: rem(15);
+    p {
+      font-weight: 500;
+      font-size: rem(20);
+      line-height: calc(30 / 20);
+      letter-spacing: 0.03em;
+      color: $navy;
+    }
+  }
+  img {
+    display: block;
+    width: rem(40);
+    height: rem(40);
+  }
+ 
+}

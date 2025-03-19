@@ -5,47 +5,51 @@ Template Name: フッター
 */
 ?>
 
-<footer class="bk-blue">
-  <div class="pagetop">
-    <a href="#top" aria-label="top"><img src="/rikuel/wp-content/uploads/2024/06/footer-go.png" alt="トップページへGO"></a>
-  </div>
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-md-3 text-center">
-        <img src="/rikuel/wp-content/uploads/2024/06/footer-rikuel-omito.svg" alt="リクエル OMITO" class="footer-rikuel-omito">
+<footer class="footer footer--background-blue">
+  <div class="footer__inner">
+    <div class="footer__container">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <a href="<?php echo home_url("/"); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-white.webp" alt="HOME" class="footer__logo-image" width="120" height="134">
+          </a>
+        </div>
       </div>
-      <div class="coi-12 col-md-7 offset-md-2 footer-menu">
-        <a href="/rikuel/#nayami">このようなお悩みありませんか？</a> | <a href="/rikuel/#senmon">採用サイト制作専門だからココが違う</a> | <a href="/rikuel/#hissu">採用サイトは必要です</a> | <a href="/rikuel/#kodawari">リクエルのこだわり</a> |
-        <a href="/rikuel/#plan">料金プラン</a> | <a href="/rikuel/#flow">完成までの流れ</a> | <a href="/rikuel/#company">運営会社</a> | <a href="https://www.omi-in.co.jp/policy" target="_blank">プライバシー･ポリシー </a>
-        <div class="row justify-content-end">
-          <div class="col-12" style="padding-top:120px">
-            <img src="/rikuel/wp-content/uploads/2024/06/footer-logo-omito.svg" style="width:50%;">
-          </div>
+      <div class="footer__right">
+        <div class="footer__menu">
+          <a href="<?php echo home_url("/#nayami"); ?>" class="footer__menu-item">私たちについて&emsp;|</a>
+          <a href="<?php echo home_url("/#senmon"); ?>" class="footer__menu-item">こんなお悩みありませんか？&emsp;|</a>
+          <a href="<?php echo home_url("/#hissu"); ?>" class="footer__menu-item">対応サービス一覧</a>
+          <a href="<?php echo home_url("/#kodawari"); ?>" class="footer__menu-item">選ばれる3つの理由&emsp;|</a>
+          <a href="<?php echo home_url("/#plan"); ?>" class="footer__menu-item">料金について&emsp;|</a>
+          <a href="<?php echo home_url("/#flow"); ?>" class="footer__menu-item">導入事例&emsp;|</a>
+          <a href="<?php echo home_url("/#company"); ?>" class="footer__menu-item">助っ人さんの仕組み</a>
+          <a href="<?php echo home_url("/#faq"); ?>" class="footer__menu-item">よくある質問&emsp;|</a>
+          <a href="<?php echo home_url("/#company"); ?>" class="footer__menu-item">会社情報&emsp;|</a>
+          <a href="https://www.omi-in.co.jp/policy" target="_blank" class="footer__menu-item">プライバシー･ポリシー</a>
+        </div>
+        <div class="footer__logo-second">
+          <p class="footer__logo-second-text">会えるから、情熱が伝わる</p>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/omito-logo.webp" class="footer__logo-second-image" width="115" height="31" alt="OMITOのロゴ">
         </div>
       </div>
     </div>
   </div>
-  <div class="cop text-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-5">
-          <p class="text-copy">©2024 OMITO All Rights Reserved.</p>
-        </div>
-        <div class="col-12 col-md-7">
-          <p class="text-ban">テキストおよび画像データの無断転載を禁じます。</p>
-        </div>
+  <div class="footer__copyright">
+    <div class="footer__inner">
+      <div class="footer__row">
+        <p class="footer__copyright-text">©2024 OMITO All Rights Reserved.</p>
+        <p class="footer__ban-text">テキストおよび画像データの無断転載を禁じます。</p>
       </div>
     </div>
+  </div>
+  </div><!-- /.footer__inner -->
+  <div class="pageTop__btn" id="page-top">
+    <a class="pageTop__link" href="<?php echo home_url("/"); ?>">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/top-arrow.png" alt="topへ" width="22" height="21">
+    </a>
   </div>
 </footer>
-
-
-<!-- ページトップ -->
-<div class="pageTop__btn" id="page-top">
-  <a class="pageTop__link" href="<?php echo home_url("/"); ?>">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/top-arrow.png" alt="topへ" width="22" height="21">
-  </a>
-</div>
 
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"

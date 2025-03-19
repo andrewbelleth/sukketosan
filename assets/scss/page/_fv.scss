@@ -1,69 +1,13 @@
 @use "../global" as *;
 
-.fv{
-    background-image: url(../images/pc/fv.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    aspect-ratio: 1440/600;
-    &__container{
-display: flex;
-flex-direction: column;
-gap: rem(60);
-padding-top: rem(141);
-margin-left: rem(30);
-    }
-    &__title{
-        padding-left: rem(28);
-        font-size: rem(48);
-        line-height: calc(52.8/48);
-        letter-spacing: 0.05em;
-        color: $white;
-    }
-    &__text{
-        padding-left: rem(28);
-        font-size: rem(64);
-        line-height: calc(70/64);
-        letter-spacing: lts-em(3.2,64);
-        padding-bottom: rem(7);
-        border-bottom: 2px solid $yellow;
-        width: fit-content;
-        color: $yellow;
-    }
-    &__text span{
-        font-size: rem(80);
-        line-height: 110%;
-        letter-spacing: lts-em(4,80);
-        color: $yellow;
-    }
-@include mq(SP){
-        background-image: url(../images/sp/fv.webp);
-        aspect-ratio: 390/600;
-        &__container{
-    gap: rem(30);
-    padding-top: rem(80);
-    margin-left: rem(32);
-        }
-        &__title{
-            padding-left: rem(0);
-            font-size: rem(24);
-            line-height: calc(26/24);
-            letter-spacing: lts-em(1.2,24);
-        }
-        &__text{
-            padding-left: rem(0);
-            font-size: rem(36);
-            line-height: calc(39/36);
-            letter-spacing: lts-em(1.8,36);
-            padding-bottom: rem(10);
-        }
-        &__text span{
-            font-size: rem(36);
-            line-height: calc(39/36);
-            letter-spacing: lts-em(1.8,36);
-        }
-    }
-    
-    
+.fv {
+  width: 100%;
+  img {
+    aspect-ratio: 1440/804;
+  }
+
+  @include mq(SP) {
+    background-image: url(../images/sp/fv.webp);
+    aspect-ratio: 390/600;
+  }
 }

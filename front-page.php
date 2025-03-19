@@ -11,6 +11,7 @@ Template Name: トップページ
     <?php get_template_part('template-parts/price'); ?>
     <?php get_template_part('template-parts/faq'); ?>
     <?php get_template_part('template-parts/company'); ?>
+    <?php get_template_part('template-parts/contact'); ?>
 </main>
 
 <?php get_template_part('template-parts/footer'); ?>

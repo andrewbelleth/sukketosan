@@ -38,5 +38,30 @@
     width: rem(40);
     height: rem(40);
   }
+ @include mq(SP) {
+  background: url(../images/sp/cta-bg.webp) no-repeat center center / cover;
+  padding: rem(67) 0;
+  .cta__inner {
+    padding-inline: rem(20);
+  }
+  .cta__title {
+    font-size: rem(24);
+    line-height: calc(40 / 24);
+  }
+  .cta__link {
+    margin-top: rem(31);
+    width: 100%;
+    padding-block: rem(19);
+    p {
+      font-weight: 500;
+      font-size: rem(17);
+      line-height: calc(25 / 17);
+    }
+  }
+  img {
+    width: rem(32);
+    height: rem(32);
+  }
  
+ }
 }

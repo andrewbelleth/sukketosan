@@ -4,7 +4,6 @@
   background: url(../images/pc/pro-bg.webp) no-repeat center center / cover;
   width: 100%;
   padding-block: rem(120) rem(107);
-  /* aspect-ratio: 1440/960; */
   overflow: hidden;
   .pro__inner {
     position: relative;
@@ -74,4 +73,59 @@
       }
     }
   }
+  @include mq(SP) {
+      background: url(../images/sp/pro-bg.webp) no-repeat center center / cover;
+      padding-block: rem(40) rem(0);
+      .pro__inner {
+        &::before {
+         left: 50%;
+         transform: translateX(-50%);
+          right: unset;
+          bottom: rem(-230);
+          background: url(../images/sp/pro-person.webp) no-repeat center center / cover;
+          aspect-ratio: 375/222;
+          width: rem(375);
+        }
+      }
+      .pro__title-wrapper {
+       padding-inline: rem(20);
+        width: 100%;
+        gap: rem(16);
+      }
+      .pro__title-text {
+        font-size: rem(25);
+        line-height: calc(36 / 33);
+      }
+      .pro__title-text-color {
+        color: $light-blue;
+        font-size: rem(33);
+        line-height: calc(48 / 33);
+      }
+      .pro__title-text-sub {
+        font-size: rem(15);
+        line-height: calc(24 / 15);
+      }
+      .pro__list {
+        max-width: 100%;
+        gap: rem(6);
+        justify-content: center;
+        li {
+          border-radius: rem(17);
+          font-size: rem(14);
+          line-height: calc(21 / 14);
+          padding-block: rem(5);
+          padding-inline: rem(12) rem(13);
+          &::before {
+            content: "";
+            width: rem(14);
+            height: rem(12);
+          }
+        }
+      }
+      .pro__title-text-size {
+        font-size: rem(33);
+        line-height: calc(48 / 33);
+        color: &main;
+      }
+    }
 }

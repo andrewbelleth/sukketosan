@@ -9,7 +9,8 @@
   }
 
   @include mq(SP) {
-    background-image: url(../images/sp/fv.webp);
-    aspect-ratio: 390/600;
+    img {
+      aspect-ratio: 375/667;
+    }
   }
 }

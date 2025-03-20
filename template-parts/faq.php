@@ -6,7 +6,26 @@
         </h2>
 
         <div class="faq__accordion">
-            <div class="accordion_one" id="firstAccordion">
+        <div class="accordion_one">
+                <div class="accordion_wrapper">
+                    <div class="accordion_header">
+                        <div class="accordion_header_inner">
+                            <span class="accordion__font-qa">Q</span>
+                            <p class="accordion__title">利用料金の支払い方法は？</p>
+                        </div>
+                        <div class="i_box">
+                            <div class="one_i"></div>
+                        </div>
+                    </div>
+                    <div class="accordion_inner">
+                        <div class="box_one">
+                            <p class="accordion__text">当社と初めてお取引の場合は、先払い（銀行振り込み）でお願いしております。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion_one">
                 <div class="accordion_wrapper">
                     <div class="accordion_header">
                         <div class="accordion_header_inner">

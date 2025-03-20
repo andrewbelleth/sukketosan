@@ -1,0 +1,198 @@
+@use "../global" as *;
+
+.worries {
+  /*  padding-block: rem(0) rem(107); */
+  .worries__title {
+    font-weight: 700;
+    font-size: rem(42);
+    line-height: calc(63 / 42);
+    color: $white;
+    padding-block: rem(88);
+    aspect-ratio: 1440/260;
+    width: 100%;
+    text-align: center;
+    background: url(../images/pc/worries-header-bg.webp) no-repeat center center /
+      cover;
+  }
+  .worries__top-wrapper {
+    aspect-ratio: 1440/750;
+    background: url(../images/pc/worries-bg.webp) no-repeat center center /
+      cover;
+    width: 100%;
+    margin-top: rem(-105);
+    padding-top: rem(176);
+  }
+  .worries__mask {
+    overflow: hidden;
+  }
+  .worries__inner {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      background: url(../images/pc/worries-person.webp) no-repeat center center /
+        cover;
+      position: absolute;
+      width: rem(760);
+      aspect-ratio: 410/273;
+      bottom: rem(-65);
+      left: rem(-257);
+    }
+  }
+  .worries__list {
+    display: flex;
+    flex-direction: column;
+    gap: rem(32);
+    width: rem(723);
+    margin-left: auto;
+  }
+  .worries__item {
+    width: max-content;
+    border-radius: rem(4);
+    background: rgba(0, 0, 0, 0.45);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    padding-block: rem(26) rem(18);
+    padding-inline: rem(32);
+    min-width: rem(625);
+    font-size: rem(24);
+    line-height: calc(42 / 24);
+    color: $white;
+    font-weight: 500;
+    text-align: center;
+    &:nth-of-type(even) {
+      margin-left: auto;
+    }
+  }
+  .worries__item-color {
+    color: $yellow;
+  }
+  .worries__bottom-wrapper {
+    position: relative;
+    padding-bottom: rem(80);
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      display: block;
+      background: url(../images/pc/worries-bg02.webp) no-repeat center center /
+        cover;
+      aspect-ratio: 1440/501;
+      width: 100%;
+      height: 100%;
+      top: rem(150);
+      clip-path: inset(2% 0 0 0);
+      /* margin-top: rem(-155); */
+    }
+  }
+
+  .worries__bottom-title {
+    position: relative;
+    z-index: 1;
+    font-size: rem(42);
+    line-height: calc(63 / 42);
+    font-weight: 700;
+    color: $white;
+    display: grid;
+    place-items: center;
+    background: url(../images/pc/worries-header02-bg.webp) no-repeat center
+      center / cover;
+    aspect-ratio: 1440/421;
+    height: rem(421);
+    width: 100%;
+    text-align: center;
+    margin-top: rem(-155);
+  }
+  .worries__bottom-list {
+    position: relative;
+    z-index: 1;
+    margin-top: rem(-180);
+    padding-top: rem(97);
+    display: flex;
+    width: 100%;
+    gap: rem(25);
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .worries__bottom-item {
+    padding-block: rem(88) rem(40);
+    padding-inline: rem(30);
+    border-radius: rem(6);
+    background: $gray;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    width: calc((100% - rem(25) * 3) / 4);
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+    }
+    &::before {
+      background: url(../images/pc/worries-hukidasi.webp) no-repeat center center /
+        cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: rem(133);
+      aspect-ratio: 133/101;
+    }
+    &::after {
+      top: rem(-55);
+      left: 50%;
+      transform: translateX(-50%);
+      width: rem(110);
+      aspect-ratio: 110/110;
+    }
+    &:nth-of-type(1) {
+      &::after {
+        background: url(../images/pc/worries-item01.webp) no-repeat center
+          center / contain;
+      }
+    }
+    &:nth-of-type(2) {
+      &::after {
+        background: url(../images/pc/worries-item02.webp) no-repeat center
+          center / contain;
+      }
+    }
+    &:nth-of-type(3) {
+      &::after {
+        background: url(../images/pc/worries-item03.webp) no-repeat center
+          center / contain;
+      }
+    }
+    &:nth-of-type(4) {
+      &::after {
+        background: url(../images/pc/worries-item04.webp) no-repeat center
+          center / contain;
+      }
+
+    }
+
+    &:nth-of-type(even) {
+      margin-top: rem(32);
+    }
+  }
+  .worries__bottom-item-title {
+    font-size: rem(20);
+    line-height: calc(30 / 20);
+    font-weight: 700;
+    color: $yellow;
+    text-align: center;
+  }
+  .worries__bottom-item-text {
+    margin-top: rem(13);
+    font-size: rem(16);
+    line-height: calc(26 / 16);
+    font-weight: normal;
+    color: $white;
+  }
+  .worries__item-line {
+    text-decoration: underline;
+    text-decoration-thickness: rem(2);
+    text-underline-offset: rem(5);
+    text-decoration-color: $yellow;
+    color: $white;
+    display: inline;
+  }
+}

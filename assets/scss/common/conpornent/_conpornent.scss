@@ -6,7 +6,7 @@
   width: 100%;
 
   @include mq(SP) {
-    width: 100%;
+    max-width: 100%;
   }
 }
 

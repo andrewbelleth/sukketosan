@@ -53,6 +53,15 @@
   @include mq(SP) {
     font-size: rem(24);
     padding-bottom: rem(10);
+    .c-title-jp {
+      font-size: rem(24);
+    }
+  
+    .c-title-en {
+      font-size: rem(70);
+      line-height: calc(105 / 70);
+      
+    }
   }
 }
 

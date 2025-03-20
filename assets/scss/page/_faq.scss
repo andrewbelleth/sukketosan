@@ -101,52 +101,53 @@
   .active.accordion_inner {
     display: block;
   }
-  /* @include mq(SP) {
-    padding-inline: rem(15);
-    padding-block: rem(30);
-    &::before {
-      width: rem(48);
-      aspect-ratio: 48 / 105;
-      background: url(../images/sp/faq.png) no-repeat center center / contain;
-      margin-top: rem(66);
-      margin-left: rem(15);
-    }
-    .faq__accordion {
-      margin-top: rem(20);
-    }
-    /*  .accordion_wrapper {
-      padding-inline: rem(16);
-      padding-block: rem(20);
-    } 
-    .accordion_one {
-      &:not(:first-of-type) {
-        margin-top: rem(20);
+  @include mq(SP) {
+    padding-block: rem(80);
+    .faq__title {
+      .faq__title-jp {
+        font-size: rem(26);
+        line-height: calc(39 / 26);
       }
     }
-    /* .accordion_header_inner {
-      gap: rem(12);
-    } 
+  
+    .faq__accordion {
+      margin-top: rem(57);
+      width: 100%;
+      padding-inline: rem(20);
+    }
+  
     .accordion_header {
-      padding-block: rem(10);
-      padding-inline: rem(10);
+      padding-block: rem(20) rem(24);
+      padding-inline: rem(16);
+      gap: rem(19);
+    }
+    .accordion__font-qa {
+      font-size: rem(26);
+      line-height: calc(39 / 26);
+      width: rem(26);
     }
     .accordion__title {
-      font-size: rem(16);
+      font-size: rem(17);
+      line-height: calc(25 / 17);
     }
-
     .accordion__text {
-      font-size: rem(16);
-      padding: rem(10);
+      font-size: rem(14);
+      line-height: calc(22 / 14);
     }
-
+  
     .one_i {
-      width: rem(10.8);
-      height: rem(10.8);
-      position: relative;
+      width: rem(20);
+      height: rem(20);
+      &::before {
+        width: rem(20);
+        height: rem(10);
+      }
+     
     }
     .accordion_inner {
-      padding-left: rem(10);
-      padding-block: rem(10);
+      display: none;
+      padding-block: 0 rem(20);
+      padding-inline: rem(16);
     }
-  } */
+  }
 }

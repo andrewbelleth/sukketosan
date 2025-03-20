@@ -28,6 +28,10 @@
       letter-spacing: 0.03em;
       color: $navy;
     }
+    &:hover{
+        background: $light-gray02;
+        transition: 0.5s;
+    }
   }
   img {
     display: block;

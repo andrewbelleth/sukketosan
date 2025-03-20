@@ -1,0 +1,77 @@
+@use "../global" as *;
+
+.pro {
+  background: url(../images/pc/pro-bg.webp) no-repeat center center / cover;
+  width: 100%;
+  padding-block: rem(120) rem(107);
+  /* aspect-ratio: 1440/960; */
+  overflow: hidden;
+  .pro__inner {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      right: rem(-373);
+      bottom: rem(-230);
+      background: url(../images/pc/pro-person.webp) no-repeat center center / cover;
+      aspect-ratio: 1165/775;
+      width: rem(1165);
+    }
+    @media (768px <= width <= 1024px) {
+      &::before {
+        right: rem(-340);
+        bottom: rem(-220);
+        width: rem(1040);
+      }
+
+    }
+  }
+  .pro__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    gap: rem(40);
+  }
+  .pro__title-text {
+    font-size: rem(60);
+    letter-spacing: -0.05em;
+    line-height: calc(90 / 60);
+    color: $main;
+  }
+  .pro__title-text-color {
+    color: $light-blue;
+  }
+  .pro__title-text-sub {
+    font-size: rem(20);
+    line-height: calc(32 / 20);
+    color: $main;
+    font-weight: nomal;
+  }
+  .pro__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: rem(500);
+    gap: rem(16);
+    li {
+      background: $light-blue;
+      border-radius: rem(20);
+      display: inline-flex;
+      align-items: center;
+      gap: rem(3);
+      font-size: rem(20);
+      line-height: calc(30 / 20);
+      color: $white;
+      padding-block: rem(5);
+      padding-inline: rem(13) rem(15);
+      &::before {
+        content: "";
+        background: url(../images/common/check-white.webp) no-repeat center
+          center / contain;
+        width: rem(21);
+        height: rem(20);
+      }
+    }
+  }
+}

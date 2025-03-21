@@ -108,3 +108,53 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+// swiper
+const swiper = new Swiper('.swiper', {
+  centeredSlides: true,
+  slidesPerView: 1.19523809524,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // 1024px以上で1.371428571429
+  breakpoints: {
+    1025: {
+      slidesPerView: 1.371428571429,
+    },
+  },
+});
+
+//モーダル
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('structure__item-3');
+  const modalTrigger = document.getElementById('structure__popup');
+  const modalClose = document.getElementById('structure__item-close');
+  const modalOverlay = document.getElementById('structure__item-overlay');
+  if (modalTrigger) {
+    modalTrigger.addEventListener('click', function() {
+      modal.classList.add('is-open');
+      modalOverlay.classList.add('is-open');
+    });
+  }
+
+  if (modalClose) {
+    modalClose.addEventListener('click', function() {
+      modal.classList.remove('is-open');
+      modalOverlay.classList.remove('is-open');
+    });
+  }
+
+  if (modalOverlay) {
+    modalOverlay.addEventListener('click', function() {
+      modal.classList.remove('is-open');
+      modalOverlay.classList.remove('is-open');
+    });
+  }
+});
+

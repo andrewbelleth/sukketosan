@@ -1,5 +1,5 @@
 <div class="contact">
-    <p class="contact__subtitle">Web戦略は助っ人さんにまるごとお任せください！</p>
+    <p class="contact__subtitle">Web戦略は助っ人さんに<br class="u-sp">まるごとお任せください！</p>
     <div class="contact__inner wrapper">
         <div class="bg-white shadow form-table">
             <p class="contact__title-en">CONTACT</p>

@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
         gsap.to(window, {
           duration: 0.5,
           ease: "power2.out",
-          scrollTo: { y: targetElement, offsetY: 50, autokill: true },
+          scrollTo: { y: targetElement, offsetY: 0, autokill: true },
         });
       }
     });

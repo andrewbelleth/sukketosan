@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .worries {
-  /*  padding-block: rem(0) rem(107); */
+  
   .worries__title {
     font-weight: 700;
     font-size: rem(42);
@@ -29,6 +29,7 @@
     position: relative;
     z-index: 1;
     &::before {
+      z-index: -1;
       content: "";
       background: url(../images/pc/worries-person.webp) no-repeat center center /
         cover;
@@ -81,7 +82,6 @@
       height: 100%;
       top: rem(150);
       clip-path: inset(2% 0 0 0);
-      /* margin-top: rem(-155); */
     }
   }
 
@@ -195,4 +195,181 @@
     color: $white;
     display: inline;
   }
+  @include mq(xlpc) {
+    .worries__bottom-title {
+         height: auto;
+         margin-top: -23%;
+       }
+     .worries__top-wrapper {
+         margin-top: -8%;
+       }
+   
+     }
+  @media (769px <= width <= 1024px) {
+    .worries__title {
+      min-height: 168px;
+      height: rem(270);
+    }
+    .worries .worries__bottom-title {
+    margin-top: rem(155);
+    }
+    .worries__top-wrapper {
+      aspect-ratio: 1440/830;
+    }
+    .worries__inner {
+      &::before {
+        left: rem(-300);
+      }
+    }
+  }
+  @include mq(SP) {
+      .worries__title {
+        font-size: rem(26);
+        line-height: calc(39 / 26);
+        padding-block: rem(42) rem(78);
+        aspect-ratio: 375/198;
+        background: url(../images/sp/worries-header-bg.webp) no-repeat center center /
+          cover;
+      }
+      .worries__top-wrapper {
+        aspect-ratio: 375/490;
+        background: url(../images/sp/worries-bg.webp) no-repeat top center /
+          cover;
+        margin-top: rem(-65);
+        padding-top: rem(57);
+      }
+      .worries__inner {
+        position: relative;
+        z-index: 1;
+        &::before {
+          z-index: -1;
+          content: "";
+          background: url(../images/sp/worries-person.webp) no-repeat center center /
+            cover;
+          position: absolute;
+          width: rem(390);
+          aspect-ratio: 390/289;
+          bottom: rem(-215);
+          left: unset;
+          right: 0;
+          clip-path: inset(0 0 0 10%);
+        }
+      }
+      .worries__list {
+        align-items: center;
+        gap: rem(16);
+        width: 100%;
+        padding-inline: rem(10);
+        margin-inline: auto;
+      }
+      .worries__item {
+       padding-block: rem(13) rem(10);
+        padding-inline: rem(16);
+        min-width: max-content;
+        font-size: rem(13);
+        background: $gray;
+        line-height: 1;
+        &:nth-of-type(even) {
+          margin-left: 0;
+        }
+      }
+     
+      .worries__bottom-wrapper {
+        padding-bottom: rem(48);
+        &::before {
+          background: url(../images/sp/worries-bg02.webp) no-repeat center center /
+            cover;
+          aspect-ratio: 375/744;
+          top: rem(60);
+          clip-path: inset(0% 0 0 0);
+        }
+      }
+    
+      .worries__bottom-title {
+        font-size: rem(26);
+        line-height: calc(39 / 26);
+        background: url(../images/sp/worries-header02-bg.webp) no-repeat center
+          center / cover;
+        aspect-ratio: 375/233;
+        height: rem(233);
+        margin-top: rem(-120);
+        padding-bottom: rem(11.5);
+      }
+      .worries__bottom-list {
+        padding-inline: rem(20);
+        margin-top: rem(10);
+        padding-top: rem(0);
+        column-gap: rem(7.5);
+        row-gap: rem(56);
+        flex-wrap: wrap;
+        align-items: stretch;
+      }
+      .worries__bottom-item {
+        padding-block: rem(48) rem(23);
+        padding-inline: rem(10) rem(13);
+        width: calc((100% - rem(7.5)) / 2);
+        position: relative;
+        &::before {
+          background: url(../images/sp/worries-hukidasi.webp) no-repeat center center /
+            cover;
+          position: absolute;
+          opacity: 0.5;
+          top: 0;
+          left: 0;
+          width: rem(133);
+          aspect-ratio: 133/101;
+        }
+        &::after {
+          top: rem(-44);
+          width: rem(88);
+          aspect-ratio: 110/110;
+        }
+        &:nth-of-type(1) {
+          &::after {
+            background: url(../images/sp/worries-item01.webp) no-repeat center
+              center / contain;
+          }
+        }
+        &:nth-of-type(2) {
+          &::after {
+            background: url(../images/sp/worries-item02.webp) no-repeat center
+              center / contain;
+          }
+        }
+        &:nth-of-type(3) {
+          &::after {
+            background: url(../images/sp/worries-item03.webp) no-repeat center
+              center / contain;
+          }
+        }
+        &:nth-of-type(4) {
+          &::after {
+            background: url(../images/sp/worries-item04.webp) no-repeat center
+              center / contain;
+          }
+    
+        }
+    
+        &:nth-of-type(even) {
+          margin-top: rem(0);
+        }
+      }
+      .worries__bottom-item-title {
+        font-size: rem(17);
+        line-height: calc(25 / 17);
+      }
+      .worries__bottom-item-text {
+        margin-top: rem(6);
+        font-size: rem(14);
+        line-height: calc(20 / 14);
+      }
+      .worries__item-line {
+        text-decoration: underline;
+        text-decoration-thickness: rem(2);
+        text-underline-offset: rem(5);
+        text-decoration-color: $yellow;
+        color: $white;
+        display: inline;
+      }
+    }
 }

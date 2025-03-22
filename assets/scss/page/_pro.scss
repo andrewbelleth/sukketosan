@@ -5,6 +5,7 @@
   width: 100%;
   padding-block: rem(120) rem(107);
   overflow: hidden;
+  margin-top: rem(-3);
   .pro__inner {
     position: relative;
     z-index: 1;
@@ -73,28 +74,36 @@
       }
     }
   }
+ 
   @include mq(SP) {
       background: url(../images/sp/pro-bg.webp) no-repeat center center / cover;
       padding-block: rem(40) rem(0);
+      aspect-ratio: 375/525;
+      min-height: rem(585);
       .pro__inner {
         &::before {
          left: 50%;
          transform: translateX(-50%);
           right: unset;
-          bottom: rem(-230);
+          bottom: rem(-220);
           background: url(../images/sp/pro-person.webp) no-repeat center center / cover;
           aspect-ratio: 375/222;
           width: rem(375);
         }
       }
       .pro__title-wrapper {
-       padding-inline: rem(20);
+      align-items: center;
         width: 100%;
         gap: rem(16);
       }
       .pro__title-text {
         font-size: rem(25);
         line-height: calc(36 / 33);
+        text-align: center;
+        white-space: nowrap;
+        span{
+          display: inline;
+        }
       }
       .pro__title-text-color {
         color: $light-blue;
@@ -102,10 +111,16 @@
         line-height: calc(48 / 33);
       }
       .pro__title-text-sub {
+        padding-inline: rem(20);
         font-size: rem(15);
         line-height: calc(24 / 15);
+        text-align: center;
+        width: 100%;
+        order: 1;
+        padding-bottom: rem(30);
       }
       .pro__list {
+        padding-inline: rem(20);
         max-width: 100%;
         gap: rem(6);
         justify-content: center;
@@ -127,5 +142,6 @@
         line-height: calc(48 / 33);
         color: &main;
       }
+
     }
 }

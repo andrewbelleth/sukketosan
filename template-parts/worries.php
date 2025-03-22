@@ -5,10 +5,10 @@ Template Name: お悩み
 */
 ?>
 
-<section class="worries">
+<section class="worries" id="worries">
     <div class="worries__mask">
         <h2 class="worries__title">
-            社内のこんなお悩みありませんか？
+            社内のこんなお悩み<br class="sp-only">ありませんか？
         </h2>
         <div class="worries__top-wrapper">
             <div class="worries__inner wrapper">
@@ -31,12 +31,12 @@ Template Name: お悩み
         <div class="worries__bottom-wrapper">
 
             <h2 class="worries__bottom-title">
-                即戦力の人材を採用したい。でも雇用リスクが心配…
+                即戦力の人材を採用したい。<br class="sp-only">でも雇用リスクが心配…
             </h2>
             <ul class="worries__bottom-list wrapper">
                 <li class="worries__bottom-item">
                     <p class="worries__bottom-item-title">
-                        採用コストのリスク
+                        採用コスト<br class="sp-only">のリスク
                     </p>
                     <p class="worries__bottom-item-text">
                         正社員を採用するには、求人掲載・面接・研修など<span class="worries__item-line">膨大な時間と費用</span>がかかります。採用しても、ミスマッチがあればさらにコスト増に…。
@@ -44,7 +44,7 @@ Template Name: お悩み
                 </li>
                 <li class="worries__bottom-item">
                     <p class="worries__bottom-item-title">
-                    固定費増加のリスク
+                    固定費増加<br class="sp-only">のリスク
                     </p>
                     <p class="worries__bottom-item-text">
                     正社員を雇うと、<span class="worries__item-line">人件費・福利厚生・社会保険</span>などの固定費が発生します。一度採用すれば、景気が悪化しても簡単に削減できません。        
@@ -52,7 +52,7 @@ Template Name: お悩み
                 </li>
                 <li class="worries__bottom-item">
                     <p class="worries__bottom-item-title">
-                    引き継ぎのリスク
+                    引き継ぎ<br class="sp-only">のリスク
                     </p>
                     <p class="worries__bottom-item-text">
                     突然の退職・休職で業務がストップ！ 引き継ぎが不十分だと、<span class="worries__item-line">プロジェクトの遅延</span>や品質低下につながります。        
@@ -60,7 +60,7 @@ Template Name: お悩み
                 </li>
                 <li class="worries__bottom-item">
                     <p class="worries__bottom-item-title">
-                    スキル不一致のリスク
+                    スキル不一致<br class="sp-only">のリスク
                     </p>
                     <p class="worries__bottom-item-text">
                     「<span class="worries__item-line">スキルが足りなかった…</span>」と採用後に後悔するケースも。実力を見極めるのは難しく、ミスマッチが発生しがちです。        

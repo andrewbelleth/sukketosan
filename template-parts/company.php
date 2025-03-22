@@ -1,4 +1,4 @@
-<section class="company">
+<section class="company" id="company">
     <div class="wrapper">
         <h2 class="company__title c-title">
             <span class="company__title-jp c-title-jp">会社概要</span>

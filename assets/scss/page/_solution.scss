@@ -203,6 +203,11 @@
 display: block;
    }
   }
+  @include mq(xlpc) {
+     .solution__content {
+      max-height: rem(1381);
+    }
+  }
   @include mq(SP) {
       .solution__title {
         background: url(../images/sp/solution-header-bg.webp) no-repeat center

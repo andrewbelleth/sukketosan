@@ -4,7 +4,7 @@ if (! defined('ABSPATH')) exit;
 Template Name: 提供サービス一覧
 */
 ?>
-<section class="solution">
+<section class="solution" id="solution">
     <div class="solution__title">
         <span class="solution__title-midasi">雇用リスクなし！</span>
         <h2 class="solution__title-text">プロ人材を明日から<br class="sp-only">活用できるのが<span class="solution__title-text-color">助っ人さん</span></h2>

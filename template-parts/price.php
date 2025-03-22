@@ -1,4 +1,4 @@
-<div class="price">
+<div class="price" id="price">
     <div class="price__wrapper wrapper">
         <h2 class="price__title c-title">
             <span class="price__title-jp c-title-jp">料金</span>

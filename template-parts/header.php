@@ -66,12 +66,12 @@
               </a>
             </li>
             <li class="header__list">
-              <a class="header__link link" href="<?php echo esc_url(home_url('/')); ?>">
+              <a class="header__link link" href="<?php echo esc_url(home_url('/#use')); ?>">
                 導入事例
               </a>
             </li>
             <li class="header__list">
-              <a class="header__link link" href="<?php echo esc_url(home_url('/')); ?>">
+              <a class="header__link link" href="<?php echo esc_url(home_url('/#structure')); ?>">
                 助っ人さんの仕組み
               </a>
             </li>
@@ -106,7 +106,7 @@
   </header>
 
   <div class="floating">
-    <a href="<?php echo esc_url(home_url('/')); ?>" class="floating__inner">
+    <a href="<?php echo esc_url(home_url('/#contact')); ?>" class="floating__inner link">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/mail-icon-white.webp" alt="" width="35" height="35"> 
     <p>お問い合わせ・無料相談</p>
     </a>

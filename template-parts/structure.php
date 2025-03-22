@@ -1,4 +1,4 @@
-<div class="structure">
+<div class="structure" id="structure">
     <div class="structure__wrapper wrapper">
         <h2 class="structure__title c-title">
             <span class="structure__title-jp c-title-jp">助っ人さんの<span class="color-light-blue">仕組み</span></span>

@@ -1,4 +1,4 @@
-<div class="use">
+<div class="use" id="use">
     <div class="use__wrapper">
         <h2 class="use__title c-title c-title--white">
             <span class="use__title-jp c-title-jp">例えばこんな使い方</span>

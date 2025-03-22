@@ -7,7 +7,7 @@
         <div class="price__person">
             <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/price-person.webp" media="(max-width: 768px)">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/price-person.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/price-person.webp" alt="">
             </picture>
         </div>
         <div class="price__container">

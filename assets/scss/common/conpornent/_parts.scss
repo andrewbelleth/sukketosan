@@ -41,10 +41,12 @@
     .c-title-jp {
       color: $white;
     }
+
     .c-title-en {
       color: $bluegreen;
     }
   }
+
   &.c-title--bg-white {
     .c-title-en {
       color: $white;
@@ -53,14 +55,15 @@
 
   @include mq(SP) {
     font-size: rem(24);
+
     .c-title-jp {
       font-size: rem(26);
     }
-  
+
     .c-title-en {
       font-size: rem(70);
       line-height: calc(105 / 70);
-      
+
     }
   }
 }
@@ -95,4 +98,131 @@
     top: 0;
     left: 0;
   }
+}
+
+.c-btn {
+  padding-top: rem(24);
+  text-align: center;
+
+  a {
+    margin-inline: auto;
+    width: rem(236);
+    min-width: fit-content;
+    height: rem(50);
+    border-radius: rem(30);
+    padding-inline: rem(16);
+    background: $orange;
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $orange;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $white;
+      color: $orange;
+    }
+  }
+
+  @include mq(SP) {
+    a {
+      width: rem(270);
+      height: rem(58);
+      font-size: max(rem(16), 16px);
+    }
+  }
+}
+
+.page {
+  margin-top: rem(60);
+
+  h2 {
+    font-size: rem(32);
+    font-weight: 700;
+    line-height: calc(48 / 32);
+    letter-spacing: 0.1em;
+    color: $main;
+    margin-bottom: rem(40);
+  }
+
+  p {
+    font-size: rem(18);
+    font-weight: 400;
+    line-height: calc(32 / 18);
+    letter-spacing: 0.05em;
+    color: $main;
+  }
+
+  .page__body {
+    padding: rem(60);
+  }
+
+  @include mq(SP) {
+    margin-top: rem(40);
+
+    h2 {
+      font-size: rem(24);
+      margin-bottom: rem(20);
+    }
+
+    p {
+      font-size: rem(14);
+    }
+
+    .page__body {
+      padding: rem(40) rem(20);
+    }
+  }
+}
+
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+}
+
+.table th {
+  background: #f7f7f7;
+  padding: 4px 6px;
+}
+.form-table th {
+  padding: 0 10px 0 10px;
+  font-weight: normal;
+}
+.table-bordered td, .table-bordered th {
+  border: 1px solid #dee2e6;
+}
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  font-size: max(rem(18), 16px);
+  font-weight: 400;
+}
+
+.table th p {
+  margin: 0;
+}
+
+.hissu {
+  font-size: 10px;
+  color: #fff;
+  padding: 1px 3px;
+  background-color: #eb6100;
+  border-radius: 6px;
+  margin: 2px 6px;
 }

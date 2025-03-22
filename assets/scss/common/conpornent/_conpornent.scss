@@ -6,7 +6,7 @@
   width: 100%;
 
   @include mq(SP) {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -55,6 +55,14 @@
 
   @include mq(SP) {
     display: block;
+  }
+}
+
+.desktop {
+  display: block;
+
+  @include mq(SP) {
+    display: none;
   }
 }
 

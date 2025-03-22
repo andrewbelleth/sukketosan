@@ -1,7 +1,7 @@
 <div class="cta">
     <div class="cta__inner">
         <p class="cta__title">
-            助っ人さんでプロ人材を自在に活用！
+            助っ人さんで<br class="sp-only">プロ人材を自在に活用！
         </p>
         <a href="<?php echo esc_url(home_url('/')); ?>" class="cta__link">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/mail-icon-blue.webp" alt="" width="35" height="35">

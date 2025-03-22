@@ -11,12 +11,18 @@
                         <div class="use__item use__item--1">
                             <div class="use__item-head">
                                 <p class="use__item-head-case">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case01.webp" alt="case1">
+                                    <picture>
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case01.webp" media="(max-width: 768px)">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case01.webp" alt="case1">
+                                    </picture>
                                 </p>
                                 <h3 class="use__item-head-title">ECサイト運営をしているけど、Web集客がうまくできない…</h3>
                             </div>
                             <div class="use__item-body">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case01-item.webp" alt="SNS運用+SNS広告">
+                                <picture>
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case01-item.webp" media="(max-width: 768px)">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case01-item.webp" alt="SNS運用+SNS広告">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -24,12 +30,18 @@
                         <div class="use__item use__item--2 ">
                             <div class="use__item-head">
                                 <p class="use__item-head-case">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case02.webp" alt="case2">
+                                    <picture>
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case02.webp" media="(max-width: 768px)">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case02.webp" alt="case2">
+                                    </picture>
                                 </p>
                                 <h3 class="use__item-head-title">ホームページをもっと活用して問い合わせを増やしたい…</h3>
                             </div>
                             <div class="use__item-body">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case02-item.webp" alt="WEBサイト運用+SNS広告">
+                                <picture>
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case02-item.webp" media="(max-width: 768px)">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case02-item.webp" alt="WEBサイト運用+SNS広告">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -37,12 +49,18 @@
                         <div class="use__item use__item--3 ">
                             <div class="use__item-head">
                                 <p class="use__item-head-case">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case03.webp" alt="case3">
+                                    <picture>
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case03.webp" media="(max-width: 768px)">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case03.webp" alt="case3">
+                                    </picture>
                                 </p>
                                 <h3 class="use__item-head-title">折込チラシでの集客に限界を感じているので、Web申込を増やしたい</h3>
                             </div>
                             <div class="use__item-body">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case03-item.webp" alt="キャンペーンLP+SNS広告">
+                                <picture>
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case03-item.webp" media="(max-width: 768px)">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case03-item.webp" alt="キャンペーンLP+SNS広告">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -50,12 +68,18 @@
                         <div class="use__item use__item--1">
                             <div class="use__item-head">
                                 <p class="use__item-head-case">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case01.webp" alt="case1">
+                                    <picture>
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case01.webp" media="(max-width: 768px)">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case01.webp" alt="case1">
+                                    </picture>
                                 </p>
                                 <h3 class="use__item-head-title">ECサイト運営をしているけど、Web集客がうまくできない…</h3>
                             </div>
                             <div class="use__item-body">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case01-item.webp" alt="SNS運用+SNS広告">
+                                <picture>
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case01-item.webp" media="(max-width: 768px)">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case01-item.webp" alt="SNS運用+SNS広告">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -63,12 +87,18 @@
                         <div class="use__item use__item--2 ">
                             <div class="use__item-head">
                                 <p class="use__item-head-case">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case02.webp" alt="case2">
+                                    <picture>
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case02.webp" media="(max-width: 768px)">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case02.webp" alt="case2">
+                                    </picture>
                                 </p>
                                 <h3 class="use__item-head-title">ホームページをもっと活用して問い合わせを増やしたい…</h3>
                             </div>
                             <div class="use__item-body">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case02-item.webp" alt="WEBサイト運用+SNS広告">
+                                <picture>
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case02-item.webp" media="(max-width: 768px)">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case02-item.webp" alt="WEBサイト運用+SNS広告">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -76,19 +106,25 @@
                         <div class="use__item use__item--3 ">
                             <div class="use__item-head">
                                 <p class="use__item-head-case">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case03.webp" alt="case3">
+                                    <picture>
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case03.webp" media="(max-width: 768px)">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case03.webp" alt="case3">
+                                    </picture>
                                 </p>
                                 <h3 class="use__item-head-title">折込チラシでの集客に限界を感じているので、Web申込を増やしたい</h3>
                             </div>
                             <div class="use__item-body">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case03-item.webp" alt="キャンペーンLP+SNS広告">
+                                <picture>
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case03-item.webp" media="(max-width: 768px)">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case03-item.webp" alt="キャンペーンLP+SNS広告">
+                                </picture>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <p class="use__text">※プロツールはオプションのため別途お見積させていただきます
+                <p class="use__text">※プロツールはオプションのため<br class="mobile">別途お見積させていただきます</p>
             </div>
         </div>
     </div>

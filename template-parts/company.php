@@ -8,7 +8,7 @@
            <div class="logo-images">
             <picture>
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pc/omito-logo.webp" media="(min-width: 768px)">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sp/omito-logo.webp" alt="会社ロゴ" width="220" height="59">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/omito-logo.webp" alt="会社ロゴ" width="220" height="59">
             </picture>
            </div><!-- /.logo-images -->
 			<dl class="company__list">

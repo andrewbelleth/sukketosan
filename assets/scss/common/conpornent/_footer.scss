@@ -102,6 +102,68 @@ footer {
     line-height: calc(17 / 11);
 
   }
+  @include mq(SP) {
+      padding-block: rem(74) rem(84);
+      .footer__inner {
+        padding-inline: rem(20);
+        width: 100%;
+      }
+    
+      .footer__container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: rem(63);
+      }
+      .footer__right {
+        gap: rem(98);
+        width: 100%;
+        align-items: center;
+      }
+      .footer__menu {
+        justify-content: center;
+      }
+    
+      .footer__menu-item {
+        font-size: rem(12);
+        line-height: calc(18 / 12);
+      }
+      .footer__logo-second {
+        p {
+          font-weight: 500;
+          font-size: rem(7);
+          line-height: calc(10 / 7);
+        }
+        &::after {
+          bottom: rem(-10);
+          right: rem(20);
+          font-size: rem(7);
+          line-height: calc(10 / 7);
+        }
+      }
+      .footer__logo-second-image {
+        width: rem(74);
+      }
+      .footer__copyright {
+        border-top: 2px solid $white;
+        margin-top: rem(53.5);
+        padding-top: rem(18.5);
+        .footer__row {
+          flex-direction: column;
+          gap: rem(20);
+        }
+      }
+      .footer__copyright-text{
+        font-size: rem(14);
+        line-height: calc(21 / 14);
+      }
+      .footer__ban-text{
+        font-size: rem(13);
+        letter-spacing: 0.05em;
+        line-height: calc(20 / 13);
+      }
+    
+  }
 }
 
 //ページトップ
@@ -131,13 +193,13 @@ footer {
     transition: 0.3s;
   }
   @include mq(SP) {
-    bottom: 16px;
-    right: 16px;
+    top: rem(-20);
+    right: rem(20);
+    width: rem(64);
+    height: rem(64);
     .pageTop__link {
-      width: rem(48);
       img {
-        width: rem(13);
-        aspect-ratio: 13/17;
+        width: rem(26);
       }
     }
   }

@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // swiper
 const swiper = new Swiper('.swiper', {
   centeredSlides: true,
-  slidesPerView: 1.19523809524,
+  slidesPerView: 1,
   loop: true,
   autoplay: {
     delay: 2000,
@@ -124,6 +124,9 @@ const swiper = new Swiper('.swiper', {
   },
   // 1024px以上で1.371428571429
   breakpoints: {
+    769: {
+      slidesPerView: 1.19523809524,
+    },
     1025: {
       slidesPerView: 1.371428571429,
     },

@@ -34,48 +34,50 @@
   <header id="header" class="header">
     <div class="header__inner u-flex">
       <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo logo">
-        <picture class="">
-          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-blue.webp" media=" (min-width: 769px)" />
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-blue.webp" alt="ホーム" width="91" height="103" />
-        </picture>
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-blue.webp" alt="ホーム" width="91" height="103" />
       </a>
       <nav id="header__navi" class="header__navbar">
         <div class="header__nav-inner">
 
           <ul class="header__menu u-flex">
             <li class="header__list">
-              <a class="header__link link" href="<?php echo esc_url(home_url('/')); ?>">
+              <a class="header__link link" href="<?php echo esc_url(home_url('/#about')); ?>">
                 私たちについて
               </a>
             </li>
             <li class="header__list">
-              <a class="header__link link" href="<?php echo esc_url(home_url('/')); ?>">
-                私たちについて
+              <a class="header__link link" href="<?php echo esc_url(home_url('/#worries')); ?>">
+                こんなお悩みありませんか？
+              </a>
+            </li>
+            <li class="header__list">
+              <a class="header__link link" href="<?php echo esc_url(home_url('/#solution')); ?>">
+                対応サービス一覧
+              </a>
+            </li>
+            <li class="header__list">
+              <a class="header__link link" href="<?php echo esc_url(home_url('/#reason')); ?>">
+                選ばれる3つの理由
+              </a>
+            </li>
+            <li class="header__list">
+              <a class="header__link link" href="<?php echo esc_url(home_url('/#price')); ?>">
+                料金について
               </a>
             </li>
             <li class="header__list">
               <a class="header__link link" href="<?php echo esc_url(home_url('/')); ?>">
-                私たちについて
+                導入事例
               </a>
             </li>
             <li class="header__list">
               <a class="header__link link" href="<?php echo esc_url(home_url('/')); ?>">
-                私たちについて
+                助っ人さんの仕組み
               </a>
             </li>
             <li class="header__list">
-              <a class="header__link link" href="<?php echo esc_url(home_url('/')); ?>">
-                私たちについて
-              </a>
-            </li>
-            <li class="header__list">
-              <a class="header__link link" href="<?php echo esc_url(home_url('/')); ?>">
-                私たちについて
-              </a>
-            </li>
-            <li class="header__list">
-              <a class="header__link link" href="<?php echo esc_url(home_url('/')); ?>">
-                私たちについて
+              <a class="header__link link" href="<?php echo esc_url(home_url('/#faq')); ?>">
+                よくある質問
               </a>
             </li>
           </ul>
@@ -86,7 +88,7 @@
         <div class="logo-images">
           <picture>
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/common/omito-logo-blue.webp" media=" (min-width: 769px)" />
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/omito-logo-blue.webp" alt="ホーム" width="101" height="32" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sp/omito-logo-blue.webp" alt="ホーム" width="101" height="32" />
           </picture>
         </div>
 

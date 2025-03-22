@@ -55,4 +55,35 @@
   .company__desc {
     flex: 1;
   }
+  @include mq(SP) {
+    background-image: url(../images/sp/company-bg.webp);
+    padding-block: rem(82) rem(127);
+    .company__title {
+      .company__title-jp {
+        font-size: rem(26);
+        line-height: calc(39 / 26);
+      }
+    }
+    .company__container {
+      margin-top: rem(54);
+      width: 100%;
+      padding-inline: rem(20);
+    }
+    .logo-images {
+      width: rem(156);
+    }
+  
+    .company__list {
+      margin-top: rem(44);
+    }
+    .company__item {
+      display: flex;
+      gap: rem(24);
+      font-size: rem(14);
+      line-height: calc(20 / 14);
+    }
+    .company__term {
+      min-width: rem(75);
+    }
+  }
 }

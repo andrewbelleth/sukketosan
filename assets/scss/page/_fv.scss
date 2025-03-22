@@ -2,12 +2,15 @@
 
 .fv {
   width: 100%;
+
   img {
+    height: 100vh;
     aspect-ratio: 1440/804;
   }
 
   @include mq(SP) {
-    background-image: url(../images/sp/fv.webp);
-    aspect-ratio: 390/600;
+    img {
+      aspect-ratio: 375/667;
+    }
   }
 }

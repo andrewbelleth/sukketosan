@@ -17,11 +17,11 @@ html {
   }
 
   @include mq(tb) {
-    font-size: calc(10 / (390 / 100) * 1vw);
+    font-size: calc(10 / (375 / 100) * 1vw);
   }
 
   @include mq(sp) {
-    font-size: calc(10 / (390 / 100) * 1vw);
+    font-size: calc(10 / (375 / 100) * 1vw);
   }
 }
 

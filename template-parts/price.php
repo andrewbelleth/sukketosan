@@ -5,7 +5,10 @@
             <span class="price__title-en c-title-en">PRICE</span>
         </h2>
         <div class="price__person">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/price-person.png" alt="">
+            <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/price-person.webp" media="(max-width: 768px)">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/price-person.png" alt="">
+            </picture>
         </div>
         <div class="price__container">
             <div class="price__box">

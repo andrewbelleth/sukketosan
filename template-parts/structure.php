@@ -33,7 +33,10 @@
                     <div class="structure__item-title">消化できなかった時間分は、<span class="structure__item-title--light-blue">翌月に繰り越せる</span></div>
                     <div class="structure__item-box">
                         <div class="structure__item-box-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item01.webp" alt="翌月に繰り越せる仕組み">
+                            <picture>
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/structure-item01-sp.webp" media="(max-width: 768px)">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item01.webp" alt="翌月に繰り越せる仕組み">
+                            </picture>
                         </div>
                         <div class="structure__item-box-body">
                             <p class="structure__item-box-text">月末に余った利用時間を翌月に繰り越すことができるので、依頼時間が少なかった月の時間がムダになりません。</p>
@@ -48,10 +51,13 @@
                     <div class="structure__item-title">時間が足りない場合は、<span class="structure__item-title--light-blue">1時間毎でチャージ可能！</span></div>
                     <div class="structure__item-box">
                         <div class="structure__item-box-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item02.webp" alt="1時間毎でチャージの仕組み">
+                            <picture>
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/structure-item02-sp.webp" media="(max-width: 768px)">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item02.webp" alt="1時間毎でチャージの仕組み">
+                            </picture>
                         </div>
                         <div class="structure__item-box-body">
-                            <p class="structure__item-box-text">その月に利用枠（時間）が足りない場合は<br>1時間単位でチャージすることが可能です。</p>
+                            <p class="structure__item-box-text">その月に利用枠（時間）が足りない場合は<br class="desktop">1時間単位でチャージすることが可能です。</p>
                             <ul class="structure__item-box-list">
                                 <li>チャージした時間は40時間を超過しても消滅はしません。</li>
                             </ul>
@@ -93,9 +99,14 @@
     </div>
     <div class="structure__item-overlay" id="structure__item-overlay"></div>
     <div class="structure__item structure__item--3" id="structure__item-3">
-        <div class="structure__item-title">消化できなかった<span class="structure__item-title--light-blue">時間の繰り越し</span>について</div>
-        <div class="structure__item-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item03.webp" alt="1時間毎でチャージの仕組み">
+        <div class="structure__item-title">消化できなかった<br class="mobile"><span class="structure__item-title--light-blue">時間の繰り越し</span>について</div>
+        <div class="structure__item-body">
+            <div class="structure__item-img">
+                <picture>
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/structure-item03.webp" media="(max-width: 768px)">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item03.webp" alt="1時間毎でチャージの仕組み">
+                </picture>
+            </div>
         </div>
         <div class="structure__item-close" id="structure__item-close">
             <p class="structure__item-close-text">閉じる</p>

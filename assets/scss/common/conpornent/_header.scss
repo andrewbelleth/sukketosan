@@ -115,8 +115,11 @@
       }
     }
     .hamburger-inner {
-      width: rem(120);
+      width: calc(rem(120) + rem(40));
       gap: rem(13.5);
+      padding-inline: rem(20);
+      border-radius: rem(40);
+      background: $white;
       .logo-images {
         width: rem(70);
         img{
@@ -168,48 +171,7 @@
       }
     }
   }
-  /*  @include mq(SP) {
-    cursor: pointer;
-    width: rem(50);
-    height: rem(50);
-    transition: 0.5s ease-in-out;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: rem(12);
-  
-    .hamburger__line {
-      display: grid;
-      width: max(rem(20), 20px);
-      height: max(rem(15), 15px);
-      place-items: center;
-      position: relative;
-      transition: 0.5s;
-      span {
-        width: max(rem(20), 20px);
-        border-radius: 1px;
-        height: max(rem(2), 2px);
-        display: block;
-        position: absolute;
-        transition: 0.5s ease-in-out;
-        background-color: $navy02;
-        left: 0;
-        &:nth-child(1) {
-          top: rem(0);
-        }
-        &:nth-child(2) {
-          top: max(rem(6), 6px);
-          opacity: 1;
-          animation-delay: 1s;
-        }
-        &:nth-child(3) {
-          top: max(rem(12), 12px);
-        }
-      }
-    }
-  }  */
+ 
 }
 
 //ハンバーガー開閉時挙動
@@ -302,4 +264,21 @@
       line-height: calc(27 / 18);
     }
   }
+}
+
+.mask{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #555;
+opacity: 0.3;
+  z-index: 50;
+}
+.mask.active{
+  opacity: 0.3;
+  visibility: visible;
 }

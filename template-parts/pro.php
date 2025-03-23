@@ -12,7 +12,7 @@ Template Name: プロ人材活用
                 Web戦略の<br><span class="pro__title-text-color">プロ人材</span><span class="pro__title-text-size">を</span><span class="pro__title-text-color">自在に活用！</span>
             </h2>
             <p class="pro__title-text-sub">
-                Web戦略に特化した<br class="sp-only">即戦力のプロ人材を、時間単位で<br class="pc-only">活用。<br class="sp-only">「助っ人さん」なら、必要なスキルを<br class="sp-only">最短で確<br class="pc-only">保し、明日からすぐに<br class="sp-only">Web戦略を実行できます！
+                Web戦略に特化した<br class="sp-only">即戦力の<span class="pro__title-text--weight">プロ人材を、時間単位で</span><br class="pc-only"><span class="pro__title-text--weight">活用。</span><br class="sp-only">「助っ人さん」なら、必要なスキルを<br class="sp-only">最短で確<br class="pc-only">保し、<span class="pro__title-text--weight">明日からすぐに</span><br class="sp-only">Web戦略を実行できます！
             </p>
 
             <ul class="pro__list">

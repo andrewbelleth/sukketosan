@@ -145,25 +145,25 @@
     }
     &:nth-of-type(1) {
       &::after {
-        background: url(../images/pc/worries-item01.webp) no-repeat center
+        background: url(../images/common/worries-item01.webp) no-repeat center
           center / contain;
       }
     }
     &:nth-of-type(2) {
       &::after {
-        background: url(../images/pc/worries-item02.webp) no-repeat center
+        background: url(../images/common/worries-item02.webp) no-repeat center
           center / contain;
       }
     }
     &:nth-of-type(3) {
       &::after {
-        background: url(../images/pc/worries-item03.webp) no-repeat center
+        background: url(../images/common/worries-item03.webp) no-repeat center
           center / contain;
       }
     }
     &:nth-of-type(4) {
       &::after {
-        background: url(../images/pc/worries-item04.webp) no-repeat center
+        background: url(../images/common/worries-item04.webp) no-repeat center
           center / contain;
       }
 
@@ -195,7 +195,7 @@
     color: $white;
     display: inline;
   }
-  @include mq(xlpc) {
+  /* @include mq(xlpc) {
     .worries__bottom-title {
          height: auto;
          margin-top: -23%;
@@ -204,7 +204,7 @@
          margin-top: -8%;
        }
    
-     }
+     } */
   @media (769px <= width <= 1024px) {
     .worries__title {
       min-height: 168px;

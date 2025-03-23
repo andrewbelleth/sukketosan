@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
   $(".hamburger").on("click", function (event) {
     event.stopPropagation();
     $("#header").toggleClass("open");
+    $(".mask").toggleClass("active");
   });
 
   // メニュー部分はクリックイベントを止める
@@ -11,10 +12,17 @@ jQuery(document).ready(function ($) {
     event.stopPropagation();
   });
 
+  // マスクをクリックしたらメニューを閉じる
+  $(".mask").on("click", function () {
+    $("#header").removeClass("open");
+    $(".mask").removeClass("active");
+  });
+
   // ドキュメント全体のクリックイベントでメニューを閉じる
   $(document).on("click", function () {
     if ($("#header").hasClass("open")) {
       $("#header").removeClass("open");
+      $(".mask").removeClass("active");
     }
   });
 });
@@ -23,7 +31,8 @@ jQuery(document).ready(function ($) {
 document.querySelectorAll('.header__link').forEach(link => {
   link.addEventListener('click', function() {
       document.querySelector('.header').classList.remove('open'); 
-  });
+      document.querySelector('.mask').classList.remove('active'); 
+    });
 });
 
 // ページトップ

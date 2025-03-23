@@ -88,7 +88,7 @@ Template Name: 提供サービス一覧
                     この他にも対応可能な作業も多数ございます<br class="sp-only">のでお気軽にご相談ください！
                 </p><!-- /solution__content-note -->
                 <div class="solution__content-link-wrapper">
-                    <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/solution-list.pdf" class="solution__content-link">
+                    <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/graf.pdf" class="solution__content-link" target="_blank">
                         提供サービス一覧を見る
                     </a>
                 </div>

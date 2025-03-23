@@ -17,15 +17,15 @@ Template Name: フッター
       </div>
       <div class="footer__right">
         <div class="footer__menu">
-          <a href="<?php echo home_url("/#nayami"); ?>" class="footer__menu-item">私たちについて&emsp;|</a>
-          <a href="<?php echo home_url("/#senmon"); ?>" class="footer__menu-item">こんなお悩みありませんか？&emsp;|</a>
-          <a href="<?php echo home_url("/#hissu"); ?>" class="footer__menu-item">対応サービス一覧</a>
-          <a href="<?php echo home_url("/#kodawari"); ?>" class="footer__menu-item">選ばれる3つの理由&emsp;|</a>
-          <a href="<?php echo home_url("/#plan"); ?>" class="footer__menu-item">料金について&emsp;|</a>
-          <a href="<?php echo home_url("/#flow"); ?>" class="footer__menu-item">導入事例&emsp;|</a>
-          <a href="<?php echo home_url("/#company"); ?>" class="footer__menu-item">助っ人さんの仕組み</a>
-          <a href="<?php echo home_url("/#faq"); ?>" class="footer__menu-item">よくある質問&emsp;|</a>
-          <a href="<?php echo home_url("/#company"); ?>" class="footer__menu-item">会社情報&emsp;|</a>
+          <a href="<?php echo home_url("/#about"); ?>" class="footer__menu-item link">私たちについて&emsp;|</a>
+          <a href="<?php echo home_url("/#worries"); ?>" class="footer__menu-item link">こんなお悩みありませんか？&emsp;|</a>
+          <a href="<?php echo home_url("/#solution"); ?>" class="footer__menu-item link">対応サービス一覧</a>
+          <a href="<?php echo home_url("/#reason"); ?>" class="footer__menu-item link">選ばれる3つの理由&emsp;|</a>
+          <a href="<?php echo home_url("/#price"); ?>" class="footer__menu-item link">料金について&emsp;|</a>
+          <a href="<?php echo home_url("/#use"); ?>" class="footer__menu-item link">導入事例&emsp;|</a>
+          <a href="<?php echo home_url("/#structure"); ?>" class="footer__menu-item">助っ人さんの仕組み</a>
+          <a href="<?php echo home_url("/#faq"); ?>" class="footer__menu-item link">よくある質問&emsp;|</a>
+          <a href="<?php echo home_url("/#company"); ?>" class="footer__menu-item link">会社情報&emsp;|</a>
           <a href="https://www.omi-in.co.jp/policy" target="_blank" class="footer__menu-item">プライバシー･ポリシー</a>
         </div>
         <div class="footer__logo-second">
@@ -38,7 +38,7 @@ Template Name: フッター
   <div class="footer__copyright">
     <div class="footer__inner">
       <div class="footer__row">
-        <p class="footer__copyright-text">©2024 OMITO All Rights Reserved.</p>
+        <p class="footer__copyright-text">©2025 OMITO All Rights Reserved.</p>
         <p class="footer__ban-text">テキストおよび画像データの無断転載を禁じます。</p>
       </div>
     </div>

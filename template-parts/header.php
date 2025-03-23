@@ -103,7 +103,9 @@
       </div>
     </div><!-- / -->
     <!-- /.header__inner -->
+    <div class="mask"></div><!-- /.mask -->
   </header>
+ 
 
   <div class="floating">
     <a href="<?php echo esc_url(home_url('/#contact')); ?>" class="floating__inner link">

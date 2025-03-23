@@ -1,11 +1,13 @@
 @use "../global" as *;
 
 html {
-  font-size: 62.5%;
+  // font-size: 62.5%;
+  font-size: calc(10 / (1440 / 100) * 1vw);
   margin-top: 0 !important;
 
   @include mq(lgpc) {
-    font-size: calc(10 / (1600 / 100) * 1vw);
+    // font-size: calc(10 / (1600 / 100) * 1vw);
+    font-size: calc(10 / (1440 / 100) * 1vw);
   }
 
   @include mq(mdpc) {

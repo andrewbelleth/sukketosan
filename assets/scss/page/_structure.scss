@@ -165,13 +165,15 @@
       transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
       width: rem(1280);
       max-width: fit-content;
-      padding: rem(58) rem(40) rem(40);
+      padding: min(rem(58), 4vh) rem(40) min(rem(40), 3vh);
       background: $white;
       max-height: rem(922);
       height: calc(922 / 11.40 * 1vh);
+      min-height: fit-content;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: rem(20);
 
       &.is-open {
         opacity: 1;
@@ -203,7 +205,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: rem(15);
 
         .structure__item-close-text {
           font-size: rem(18);

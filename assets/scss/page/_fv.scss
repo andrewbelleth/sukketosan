@@ -17,9 +17,7 @@
     aspect-ratio: 1440/804;
   } */
 
- /*  @include mq(SP) {
-    img {
-      aspect-ratio: 375/667;
-    }
-  } */
+  @include mq(SP) {
+    height: auto;
+  }
 }

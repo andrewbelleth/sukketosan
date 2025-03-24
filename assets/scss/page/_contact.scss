@@ -68,6 +68,10 @@
     .contact__form {
         margin-top: rem(20);
 
+        .wpcf7-form-control-wrap {
+            width: 100%;
+        }
+
         .contact__form-item {
             display: flex;
             flex-direction: column;
@@ -284,6 +288,7 @@
         .wpcf7-spinner {
             display: none;
         }
+
     }
 
     @include mq(SP) {

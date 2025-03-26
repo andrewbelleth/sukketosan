@@ -4,14 +4,14 @@ if (! defined('ABSPATH')) exit;
 Template Name: 提供サービス一覧
 */
 ?>
-<section class="solution" id="solution">
+<section class="solution" >
     <div class="solution__title">
         <span class="solution__title-midasi">雇用リスクなし！</span>
         <h2 class="solution__title-text">プロ人材を明日から<br class="sp-only">活用できるのが<span class="solution__title-text-color">助っ人さん</span></h2>
     </div>
-    <div class="solution__content">
+    <div class="solution__content" id="solution">
         <div class="wrapper">
-            <div class="solution__content-inner">
+            <div class="solution__content-inner ">
                 <h3>圧倒的な対応範囲！<br>
                     助っ人さんならWeb業務をまるごと解決</h3>
 
@@ -85,7 +85,7 @@ Template Name: 提供サービス一覧
                     </li>
                 </ul>
                 <p class="solution__content-note">
-                    この他にも対応可能な作業も多数ございます<br class="sp-only">のでお気軽にご相談ください！
+                    この他にも対応可能な作業も多数ございます<br class="sp-only">ので、お気軽にご相談ください！
                 </p><!-- /solution__content-note -->
                 <div class="solution__content-link-wrapper">
                     <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/graf.pdf" class="solution__content-link" target="_blank">

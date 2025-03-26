@@ -309,10 +309,12 @@
         padding-inline: rem(10) rem(13);
         width: calc((100% - rem(7.5)) / 2);
         position: relative;
+       z-index: 0;
         &::before {
           background: url(../images/sp/worries-hukidasi.webp) no-repeat center center /
             cover;
           position: absolute;
+          z-index: 1;
           opacity: 0.5;
           top: 0;
           left: 0;
@@ -357,6 +359,8 @@
       .worries__bottom-item-title {
         font-size: rem(17);
         line-height: calc(25 / 17);
+        z-index: 1;
+        position: relative;
       }
       .worries__bottom-item-text {
         margin-top: rem(6);

@@ -12,17 +12,17 @@
     &::before {
       content: "";
       position: absolute;
-      right: rem(-373);
-      bottom: rem(-230);
+      right: rem(-280);
+      bottom: rem(-110);
       background: url(../images/pc/pro-person.webp) no-repeat center center / cover;
-      aspect-ratio: 1165/775;
-      width: rem(1165);
+      aspect-ratio: 1032/606;
+      width: rem(1032);
     }
     @media (768px <= width <= 1024px) {
       &::before {
-        right: rem(-340);
-        bottom: rem(-220);
-        width: rem(1040);
+        right: rem(-270);
+        bottom: rem(-110);
+        width: rem(910);
       }
 
     }
@@ -88,7 +88,7 @@
          left: 50%;
          transform: translateX(-50%);
           right: unset;
-          bottom: rem(-220);
+          bottom: min(rem(-230),-230px);
           background: url(../images/sp/pro-person.webp) no-repeat center center / cover;
           aspect-ratio: 375/222;
           width: rem(375);

@@ -4,7 +4,7 @@
         <div class="bg-white shadow form-table">
             <p class="contact__title-en">CONTACT</p>
             <h2 class="contact__title">お問い合わせ</h2>
-            <p class="contact__text">助っ人さんにお悩みをぶつけてください。情熱を持って対応致します！</p>
+            <p class="contact__text">助っ人さんにお悩みをぶつけてください。情熱を持って対応いたします！</p>
 
             <?php echo do_shortcode('[contact-form-7 id="774c6fb" title="Contact form 1"]'); ?>
         </div>

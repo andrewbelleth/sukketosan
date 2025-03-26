@@ -58,9 +58,6 @@
                         </div>
                         <div class="structure__item-box-body">
                             <p class="structure__item-box-text">その月に利用枠（時間）が足りない場合は<br class="desktop">1時間単位でチャージすることが可能です。</p>
-                            <ul class="structure__item-box-list">
-                                <li>チャージした時間は40時間を超過しても消滅はしません。</li>
-                            </ul>
                             <ul class="structure__hour-list">
                                 <li class="structure__hour-item">
                                     <span class="structure__hour-item-text">追加 1 時間</span>

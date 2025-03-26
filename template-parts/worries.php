@@ -52,7 +52,7 @@ Template Name: お悩み
                 </li>
                 <li class="worries__bottom-item">
                     <p class="worries__bottom-item-title">
-                    引き継ぎ<br class="sp-only">のリスク
+                    担当退職<br class="sp-only">のリスク
                     </p>
                     <p class="worries__bottom-item-text">
                     突然の退職・休職で業務がストップ！ 引き継ぎが不十分だと、<span class="worries__item-line">プロジェクトの遅延や品質低下</span>につながります。        

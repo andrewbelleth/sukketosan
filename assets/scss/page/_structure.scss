@@ -313,7 +313,7 @@
         .structure__hour-item-text {
           width: rem(68);
           height: rem(24);
-          font-size: 10px;
+          font-size: rem(10);
           line-height: calc(25 / 10);
           font-weight: 500;
           color: $white;

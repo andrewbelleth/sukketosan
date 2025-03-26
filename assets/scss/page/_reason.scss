@@ -61,6 +61,7 @@
 
             .reason__item-img {
                 width: rem(1440);
+                top: rem(-90);
                 right: 0;
             }
         }
@@ -153,6 +154,15 @@
         }
     }
 
+    @include mq(smpc) {
+        .reason__item {
+            &.reason__item--1 {
+                .reason__item-img {
+                    top: rem(-93);
+                }
+            }
+        }
+    }
     @include mq(SP) {
         overflow: hidden;
         
@@ -205,6 +215,7 @@
                 .reason__item-img {
                     width: 100%;
                     right: 0;
+                    top: 0;
                 }
 
                 .reason__item-num {

@@ -127,6 +127,10 @@ const swiper = new Swiper('.swiper', {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   // 1024px以上で1.371428571429
   breakpoints: {
     769: {

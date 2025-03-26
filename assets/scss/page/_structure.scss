@@ -674,7 +674,7 @@
           .structure__hour-item-text {
             width: rem(58);
             height: rem(22);
-            font-size: 10px;
+            font-size: max(rem(10), 10px);
           }
 
           .structure__hour-item-price {

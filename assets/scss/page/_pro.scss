@@ -83,6 +83,8 @@
       padding-block: rem(40) rem(0);
       aspect-ratio: 375/525;
       min-height: rem(585);
+      overflow: hidden;
+      
       .pro__inner {
         &::before {
          left: 50%;

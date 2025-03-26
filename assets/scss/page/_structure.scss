@@ -313,7 +313,7 @@
         .structure__hour-item-text {
           width: rem(68);
           height: rem(24);
-          font-size: 10px;
+          font-size: rem(10);
           line-height: calc(25 / 10);
           font-weight: 500;
           color: $white;
@@ -659,7 +659,7 @@
       .structure__hour-list {
         margin-top: rem(24 - 3.5);
         width: fit-content;
-        height: rem(84);
+        height: rem(86);
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -674,7 +674,7 @@
           .structure__hour-item-text {
             width: rem(58);
             height: rem(22);
-            font-size: 10px;
+            font-size: max(rem(10), 10px);
           }
 
           .structure__hour-item-price {

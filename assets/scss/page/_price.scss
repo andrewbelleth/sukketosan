@@ -218,7 +218,7 @@
         .price__person {
             position: absolute;
             top: auto;
-            bottom: 0;
+            bottom: -1px;
             right: 0;
             width: rem(280);
         }

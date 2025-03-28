@@ -128,7 +128,7 @@ const swiper = new Swiper('.swiper', {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   // 1024px以上で1.371428571429

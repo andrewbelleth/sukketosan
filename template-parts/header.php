@@ -27,14 +27,37 @@
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
   <?php wp_head(); ?>
 
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TTTKKP3W');
+  </script>
+  <!-- End Google Tag Manager -->
+
 </head>
 
 <body <?php body_class(); ?>>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTTKKP3W"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <header id="header" class="header">
     <div class="header__inner u-flex">
       <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo logo">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-blue.webp" alt="ホーム" width="91" height="103" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-blue.webp" alt="ホーム" width="91" height="103" />
       </a>
       <nav id="header__navi" class="header__navbar">
         <div class="header__nav-inner">
@@ -105,11 +128,11 @@
     <!-- /.header__inner -->
     <div class="mask"></div><!-- /.mask -->
   </header>
- 
+
 
   <div class="floating">
     <a href="<?php echo esc_url(home_url('/#form')); ?>" class="floating__inner link">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/mail-icon-white.webp" alt="" width="35" height="35"> 
-    <p>お問い合わせ・無料相談</p>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/mail-icon-white.webp" alt="" width="35" height="35">
+      <p>お問い合わせ・無料相談</p>
     </a>
   </div>

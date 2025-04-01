@@ -5,27 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
+  
+  
   <!--Google font-->
   <!-- プリコネクト -->
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  -->
   <!-- JavaScript あり用 -->
   <!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Aguafina+Script&family=Shippori+Gothic+B2:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
- -->
+  -->
   <!-- JavaScript なし用のフォールバック -->
   <!-- <noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Aguafina+Script&family=Shippori+Gothic+B2:wght@400;700&display=swap">
-</noscript> -->
-
-  <!-- swiper -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Aguafina+Script&family=Shippori+Gothic+B2:wght@400;700&display=swap">
+  </noscript> -->
+  
   <?php wp_head(); ?>
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- Google Tag Manager -->
   <script>

@@ -47,27 +47,27 @@ jQuery(document).ready(function () {
 });
 
 
-//fadeIn
-document.addEventListener("DOMContentLoaded", function () {
-  let triggerEffects = document.querySelectorAll(".fadeIn");
-  gsap.set(".fadeIn", { y: 40, autoAlpha: 0 });
+// //fadeIn
+// document.addEventListener("DOMContentLoaded", function () {
+//   let triggerEffects = document.querySelectorAll(".fadeIn");
+//   gsap.set(".fadeIn", { y: 40, autoAlpha: 0 });
 
-  triggerEffects.forEach((trigger) => {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: trigger,
-        start: "top 95%",
-       /*  markers: true, */
-      },
-    });
-    tl
-    .fromTo(
-      trigger,
-      { y: 40, autoAlpha: 0 },
-      { y: 0, autoAlpha: 1, stagger: 0.2, delay: 0.5 ,duration: 0.2}
-    );
-  });
-});
+//   triggerEffects.forEach((trigger) => {
+//     let tl = gsap.timeline({
+//       scrollTrigger: {
+//         trigger: trigger,
+//         start: "top 95%",
+//        /*  markers: true, */
+//       },
+//     });
+//     tl
+//     .fromTo(
+//       trigger,
+//       { y: 40, autoAlpha: 0 },
+//       { y: 0, autoAlpha: 1, stagger: 0.2, delay: 0.5 ,duration: 0.2}
+//     );
+//   });
+// });
 
 
 //あこーでぃおん

@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="use__item use__item--2 ">
+                        <div class="use__item use__item--2">
                             <div class="use__item-head">
                                 <p class="use__item-head-case">
                                     <picture>
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="use__item use__item--3 ">
+                        <div class="use__item use__item--3">
                             <div class="use__item-head">
                                 <p class="use__item-head-case">
                                     <picture>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="use__item use__item--2 ">
+                        <div class="use__item use__item--2">
                             <div class="use__item-head">
                                 <p class="use__item-head-case">
                                     <picture>
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="use__item use__item--3 ">
+                        <div class="use__item use__item--3">
                             <div class="use__item-head">
                                 <p class="use__item-head-case">
                                     <picture>

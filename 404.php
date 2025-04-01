@@ -1,25 +1,20 @@
 <?php
-/* 
-Template Name: 404
-*/
+if (! defined('ABSPATH')) exit;
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
 
 <main>
-    <div id="container_404" class="sub container_404 wrapper">
-        <div class="error" id="error">
-            <p>お探しのページが<br class="sp-only">見つかりません。</p>
-            <div class="btn mgnt-80">
-                <a class="btn__link" href="<?php echo  esc_url(home_url("/")); ?>">
-                    TOPに戻る
-                    <span class="arrow"></span><!-- /.arrow -->
-                </a><!-- /.btn__link -->
+    <div class="container">
+        <div class="page">
+            <div class="page__body wrapper">
+                <h2 class="404__title">お探しのページが見つかりませんでした。</h2>
+                <p class="404__text">お探しのページが見つかりませんでした。</p>
+                <a href="<?php echo home_url("/sukettosan"); ?>" class="404__link">トップページに戻る</a>
             </div>
 
         </div>
     </div>
-    <?php get_template_part('template-parts/contact-cta'); ?>
 </main>
 
 <?php get_template_part('template-parts/footer'); ?>

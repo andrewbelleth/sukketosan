@@ -19,7 +19,7 @@ Template Name: フッター
         <div class="footer__menu">
           <a href="<?php echo home_url("/#about"); ?>" class="footer__menu-item link">私たちについて&emsp;|</a>
           <a href="<?php echo home_url("/#worries"); ?>" class="footer__menu-item link">こんなお悩みありませんか？&emsp;|</a>
-          <a href="<?php echo home_url("/#solution"); ?>" class="footer__menu-item link">対応サービス一覧</a>
+          <a href="<?php echo home_url("/#solution"); ?>" class="footer__menu-item footer__menu-item--sp-line link">対応サービス一覧</a>
           <a href="<?php echo home_url("/#reason"); ?>" class="footer__menu-item link">選ばれる3つの理由&emsp;|</a>
           <a href="<?php echo home_url("/#price"); ?>" class="footer__menu-item link">料金について&emsp;|</a>
           <a href="<?php echo home_url("/#use"); ?>" class="footer__menu-item link">導入事例&emsp;|</a>

@@ -1,7 +1,7 @@
 <?php
 function mytheme_enqueue_styles()
 {
-  wp_enqueue_style('ress', 'https://unpkg.com/ress/dist/ress.min.css', array(), '1.0.0');
+  // wp_enqueue_style('ress', 'https://unpkg.com/ress/dist/ress.min.css', array(), '1.0.0');
   wp_enqueue_style('css', get_theme_file_uri('/assets/css/style.css'));
   if (!wp_script_is('jquery', 'enqueued')) {
     wp_enqueue_script('jquery');

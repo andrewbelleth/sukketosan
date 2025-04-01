@@ -127,6 +127,12 @@ footer {
       .footer__menu-item {
         font-size: rem(12);
         line-height: calc(18 / 12);
+
+        &--sp-line {
+          &::after {
+            content: " |";
+          }
+        }
       }
       .footer__logo-second {
         p {

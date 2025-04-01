@@ -6,7 +6,7 @@
             <h2 class="contact__title">お問い合わせ</h2>
             <p class="contact__text">助っ人さんにお悩みをぶつけてください。情熱を持って対応いたします！</p>
 
-            <?php echo do_shortcode('[contact-form-7 id="768d9c0" title="お問い合せ"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="21a367f" title="お問い合わせ"]'); ?>
         </div>
     </div>
 </div>

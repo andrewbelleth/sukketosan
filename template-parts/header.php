@@ -22,10 +22,10 @@
 </noscript> -->
 
   <!-- swiper -->
-  <!--  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
   <?php wp_head(); ?>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
 
   <!-- Google Tag Manager -->
   <script>

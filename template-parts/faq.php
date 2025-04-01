@@ -57,7 +57,7 @@
                     </div>
                     <div class="accordion_inner">
                         <div class="box_one">
-                            <p class="accordion__text">中途解約の場合は、ご契約残月分の料金の50%を後請求させていただきます。</p>
+                            <p class="accordion__text">中途解約の場合は、ご契約残月分の料金の50%をご請求させていただきます。</p>
                         </div>
                     </div>
                 </div>

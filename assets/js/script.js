@@ -97,26 +97,62 @@ jQuery(document).ready(function () {
 //ページ内リンク
 document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollToPlugin);
-  const anchors = document.querySelectorAll(
-    ".link"
-  );
+
+  // ページ内リンクのイベントリスナー設定
+  const anchors = document.querySelectorAll(".link");
+
   anchors.forEach((anchor) => {
     anchor.addEventListener("click", (e) => {
-      e.preventDefault();
-      // URLからハッシュ部分を抽出
-      const targetSelector = anchor.getAttribute("href").split("#")[1];
-      const targetElement = document.querySelector("#" + targetSelector);
-      if (targetElement) {
+      const href = anchor.getAttribute("href");
+
+      // ハッシュ部分を取得
+      const hashIndex = href.indexOf("#");
+      if (hashIndex === -1) return; // ハッシュがないリンクは無視
+
+      const hash = href.slice(hashIndex + 1);
+      const targetElement = document.getElementById(hash);
+
+      // 現在のページのURLを取得
+      const currentUrl = new URL(window.location.href);
+      const linkUrl = new URL(href, window.location.href);
+
+      // 同じページ内のリンクならGSAPでスムーススクロール
+      if (currentUrl.pathname === linkUrl.pathname && targetElement) {
+        e.preventDefault(); // デフォルトのジャンプを防ぐ
+
         gsap.to(window, {
           duration: 0.5,
           ease: "power2.out",
-          scrollTo: { y: targetElement, offsetY: 0, autokill: true },
+          scrollTo: {
+            y: targetElement,
+            offsetY: 100,
+            autokill: true,
+          },
         });
       }
     });
   });
-});
 
+  // ページロード時のハッシュ処理
+  if (window.location.hash) {
+    setTimeout(() => {
+      const hash = window.location.hash.slice(1);
+      const targetElement = document.getElementById(hash);
+
+      if (targetElement) {
+        gsap.to(window, {
+          duration: 0.5,
+          ease: "power2.out",
+          scrollTo: {
+            y: targetElement,
+            offsetY: 80,
+            autokill: true,
+          },
+        });
+      }
+    }, 80);
+  }
+});
 
 // swiper
 const swiper = new Swiper('.swiper', {

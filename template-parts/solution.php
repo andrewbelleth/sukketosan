@@ -18,7 +18,7 @@ Template Name: 提供サービス一覧
                 <ul class="solution__list">
                     <li class="solution__item solution__item--center">
                         <div class="solution__content-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item01.webp" alt="" width="384" height="200">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item01.webp" alt="ホームページ制作・LP制作" width="384" height="200">
                         </div>
                         <h4>ホームページ制作・LP制作</h4>
                         <div class="solution__content-text-wrapper solution__content-text-wrapper--01">
@@ -30,7 +30,7 @@ Template Name: 提供サービス一覧
                     </li>
                     <li class="solution__item">
                         <div class="solution__content-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item02.webp" alt="" width="384" height="200">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item02.webp" alt="ホームページ修正・LP更新" width="384" height="200">
                         </div>
                         <h4>ホームページ修正・LP更新</h4>
                         <div class="solution__content-text-wrapper solution__content-text-wrapper--02">
@@ -41,7 +41,7 @@ Template Name: 提供サービス一覧
                     </li>
                     <li class="solution__item ">
                         <div class="solution__content-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item03.webp" alt="" width="384" height="200">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item03.webp" alt="ネット広告運用" width="384" height="200">
                         </div>
                         <h4>ネット広告運用</h4>
                         <div class="solution__content-text-wrapper solution__content-text-wrapper--03">
@@ -52,7 +52,7 @@ Template Name: 提供サービス一覧
                     </li>
                     <li class="solution__item solution__item--center">
                         <div class="solution__content-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item04.webp" alt="" width="384" height="200">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item04.webp" alt="LINE公式アカウントの運用代行" width="384" height="200">
                         </div>
                         <h4>LINE公式アカウントの運用代行</h4>
                         <div class="solution__content-text-wrapper solution__content-text-wrapper--04">
@@ -62,7 +62,7 @@ Template Name: 提供サービス一覧
                     </li>
                     <li class="solution__item">
                         <div class="solution__content-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item05.webp" alt="" width="384" height="200">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item05.webp" alt="SNSの運用代行" width="384" height="200">
                         </div>
                         <h4>SNSの運用代行</h4>
                         <div class="solution__content-text-wrapper solution__content-text-wrapper--05">
@@ -74,7 +74,7 @@ Template Name: 提供サービス一覧
                     </li>
                     <li class="solution__item">
                         <div class="solution__content-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item06.webp" alt="" width="384" height="200">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/solution-item06.webp" alt="動画コンテンツの企画運用" width="384" height="200">
                         </div>
                         <h4>動画コンテンツの企画運用</h4>
                         <div class="solution__content-text-wrapper solution__content-text-wrapper--06">

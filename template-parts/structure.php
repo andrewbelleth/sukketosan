@@ -10,21 +10,21 @@
                     <p class="structure__flow-item-num">1</p>
                     <p class="structure__flow-item-text">毎月初に規定時間20時間を付与いたします。</p>
                     <p class="structure__flow-item-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-flow01-item.webp" alt="20h charge">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-flow01-item.webp" alt="毎月初に規定時間20時間を付与">
                     </p>
                 </div>
                 <div class="structure__flow-item structure__flow-item--2">
                     <p class="structure__flow-item-num">2</p>
                     <p class="structure__flow-item-text">月初ミーティングで20時間の使い方を詳しく打ち合わせし、その月にご依頼いただく施策を決定します。</p>
                     <p class="structure__flow-item-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-flow02-item.webp" alt="meeting">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-flow02-item.webp" alt="月初ミーティングで20時間の使い方を詳しく打ち合わせ">
                     </p>
                 </div>
                 <div class="structure__flow-item structure__flow-item--3">
                     <p class="structure__flow-item-num">3</p>
                     <p class="structure__flow-item-text">ご依頼施策内容と予定工数は「提案シート」で可視化して管理し、実際の作業工数を記録します。お客様と当社双方で消化状況をチェックできるので、安心してお任せいただけます。</p>
                     <p class="structure__flow-item-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-flow03-item.webp" alt="calendar">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-flow03-item.webp" alt="ご依頼施策内容と予定工数は「提案シート」で可視化して管理">
                     </p>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                         <div class="structure__item-box-img">
                             <picture>
                                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/structure-item01-sp.webp" media="(max-width: 768px)">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item01.webp" alt="翌月に繰り越せる仕組み">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item01.webp" alt="消化できなかった時間分は、翌月に繰り越せる">
                             </picture>
                         </div>
                         <div class="structure__item-box-body">
@@ -53,7 +53,7 @@
                         <div class="structure__item-box-img">
                             <picture>
                                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/structure-item02-sp.webp" media="(max-width: 768px)">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item02.webp" alt="1時間毎でチャージの仕組み">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item02.webp" alt="時間が足りない場合は、1時間毎でチャージ可能！">
                             </picture>
                         </div>
                         <div class="structure__item-box-body">
@@ -101,7 +101,7 @@
             <div class="structure__item-img">
                 <picture>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/structure-item03.webp" media="(max-width: 768px)">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item03.webp" alt="1時間毎でチャージの仕組み">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/structure-item03.webp" alt="消化できなかった時間の繰り越しについて">
                 </picture>
             </div>
         </div>

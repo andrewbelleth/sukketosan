@@ -7,7 +7,7 @@
         <div class="price__person">
             <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/price-person.webp" media="(max-width: 768px)">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/price-person.webp" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/price-person.webp" alt="人材を何名利用してもOK!完全時間制">
             </picture>
         </div>
         <div class="price__container">

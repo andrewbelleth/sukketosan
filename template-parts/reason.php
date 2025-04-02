@@ -17,7 +17,7 @@
                             <div class="reason__item-img">
                                 <picture>
                                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/reason-item01-person.webp" media="(max-width: 768px)">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/reason-item01-person.webp" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/reason-item01-person.webp" alt="プロ人材を必要な分だけ活用！">
                                 </picture>
                             </div>
                         </div>
@@ -34,7 +34,7 @@
                             <div class="reason__item-img">
                                 <picture>
                                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/reason-item02-person.webp" media="(max-width: 768px)">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/reason-item02-person.webp" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/reason-item02-person.webp" alt="Web業務は助っ人さんにまるごとお任せ！">
                                 </picture>
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                             <div class="reason__item-img">
                                 <picture>
                                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/reason-item03-person.webp" media="(max-width: 768px)">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/reason-item03-person.webp" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/reason-item03-person.webp" alt="提案シートでスムーズな進行！">
                                 </picture>
                             </div>
                         </div>

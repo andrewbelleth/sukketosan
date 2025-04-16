@@ -21,7 +21,7 @@
                             <div class="use__item-body">
                                 <picture>
                                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case01-item.webp" media="(max-width: 768px)">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case01-item.webp" alt="SNS運用+SNS広告">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case01-item.webp" alt="ECサイト運営をしているけど、Web集客がうまくできない…">
                                 </picture>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                             <div class="use__item-body">
                                 <picture>
                                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case02-item.webp" media="(max-width: 768px)">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case02-item.webp" alt="WEBサイト運用+SNS広告">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case02-item.webp" alt="ホームページをもっと活用して問い合わせを増やしたい…">
                                 </picture>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                             <div class="use__item-body">
                                 <picture>
                                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/case03-item.webp" media="(max-width: 768px)">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case03-item.webp" alt="キャンペーンLP+SNS広告">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/case03-item.webp" alt="折込チラシでの集客に限界を感じているので、Web申込を増やしたい">
                                 </picture>
                             </div>
                         </div>

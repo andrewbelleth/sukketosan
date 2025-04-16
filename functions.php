@@ -174,3 +174,15 @@ function custom_wpcf7_validation_error_textarea($result, $tag)
         return $result;
 }
 add_filter('wpcf7_validate_textarea', 'custom_wpcf7_validation_error_textarea', 10, 2);
+
+function custom_wp_noindex_except_frontpage( $robots ) {
+  if ( !is_front_page() ) {
+      $robots['noindex'] = true;
+      $robots['follow']  = true;
+
+      // 不要なら image preview 設定を解除
+      unset( $robots['max-image-preview'] );
+  }
+  return $robots;
+}
+add_filter( 'wp_robots', 'custom_wp_noindex_except_frontpage' );
